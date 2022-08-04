@@ -17,6 +17,7 @@ body {
     //background: linear-gradient(to right bottom, #6d327c, #485DA6, #00a1ba, #01b18e, #32b37b);
     // background: #D3D3D3;
     background-image: url("../public/bg.jpg");
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
     position: fixed;
     left: 0;
     top: 0;
@@ -46,9 +47,10 @@ body {
 .react-multi-carousel-list {
   & .arrow-btn{
     transition: width 300ms ease;
-    width: 50px;
+    width: 40px;
     &:hover{
-      width: 60px;
+      width: 50px;
+      opacity: 0.8;
     }
   }
   

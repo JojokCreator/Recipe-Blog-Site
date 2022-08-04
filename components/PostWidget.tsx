@@ -51,7 +51,7 @@ const PostWidget = ({categories, slug}: Props) => {
             </div>
             <div className="flex-grow ml-4">
               <p className="text-gray-500 font-xs">
-                  {moment(post.createdAt).format('MMM DD, YYY')}
+                  {moment(post.createdAt).format('MMM DD, YYYY')}
               </p>
               <Link href={`/post/${post.slug}`} className="text-md">
                 {post.title}
