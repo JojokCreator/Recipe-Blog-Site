@@ -36,18 +36,14 @@ const FeaturedPosts = () => {
   }, []);
 
   const customLeftArrow = (
-    <div className="absolute arrow-btn left-0 text-center py-3 cursor-pointer bg-indigo-600 rounded-full">
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white w-full" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-      </svg>
+    <div className="absolute arrow-btn left-0 text-center py-3 cursor-pointer rounded-full">
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white w-full float-right" width="10.605" height="15.555"><path fill="#ffff"d="M10.605 12.727 5.656 7.776l4.949-4.948L7.777 0 0 7.776l7.777 7.779 2.828-2.828z"/></svg>
     </div>
   );
 
   const customRightArrow = (
-    <div className="absolute arrow-btn right-0 text-center py-3 cursor-pointer bg-indigo-600 rounded-full">
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white w-full float-right" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path className="absolute strokeLinecap="strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-      </svg>
+    <div className="absolute arrow-btn right-0 text-center py-3 cursor-pointer rounded-full">
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white w-full" width="10.605" height="15.555"><path fill="#ffff" d="m2.828 15.555 7.777-7.779L2.828 0 0 2.828l4.949 4.948L0 12.727l2.828 2.828z"/></svg>
     </div>
   );
 
