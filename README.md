@@ -1,27 +1,35 @@
-# Next.js + Tailwind CSS Example
+# Barefoot Chef Blog revamp in Next.js and GraphQL
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+## Overview
 
-## Deploy your own
+This is a revamp of my personal recipe blog site. I have run this site for many years using youtube and wordpress and have just revamped it to use GraphQL and Next.js.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+### Features
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+- **Create Blogs** - User is able to create blog posts using markdown on [the Hygraph site](https://hygraph.com/) that are added to the site. 
+- **Post Comments** - Users are able to post comments on the site that are reviewed by the owner before being displayed.
+- **Featured Posts** - Featured Posts are displayed in a carousel on the top of the site
+- **Categories** - Allow users to search posts by category.  
+- **Responsive** - Site is fully responsive.  
 
-## How to use
+### Links
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+- Live Site URL: [Deployed on Vercel](https://barefootrecipe.vercel.app/)
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-```
+## My process
 
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+### Built with
+- [Next.JS](https://nextjs.org/) - React Framework
+- [GrapQL](https://hygraph.com/) - Headless content management system that is completely GraphQL native
+- Javascript
+- Semantic HTML5 markup
+- Tailwind CSS
+- Media queries
 
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+### What I learned
+
+(tobe continued)
+
+- **Q Objects**
+  To execute more complex queries with django ORM (for example, queries with OR statements) you need to use Q objects. I used them at multiple places in my views and they make up my simple search feature work.
