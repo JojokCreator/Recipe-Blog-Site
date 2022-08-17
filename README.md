@@ -1,27 +1,88 @@
-# Next.js + Tailwind CSS Example
+# Barefoot Chef Blog revamp in Next.js and GraphQL
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+## Overview
 
-## Deploy your own
+This is a revamp of my personal recipe blog site. I have run this site for many years using youtube and wordpress and have just revamped it to use GraphQL and Next.js.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+### Features
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+- **Create Blogs** - User is able to create blog posts using markdown on [the Hygraph site](https://hygraph.com/) that are added to the site. 
+- **Post Comments** - Users are able to post comments on the site that are reviewed by the owner before being displayed.
+- **Featured Posts** - Featured Posts are displayed in a carousel on the top of the site
+- **Categories** - Allow users to search posts by category.  
+- **Responsive** - Site is fully responsive.  
 
-## How to use
+### Links
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+- Live Site URL: [Deployed on Vercel](https://barefootrecipe.vercel.app/)
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
+## My process
+
+### Built with
+- [Next.JS](https://nextjs.org/) - React Framework
+- [GrapQL](https://hygraph.com/) - Headless content management system that is completely GraphQL native
+- Javascript
+- Semantic HTML5 markup
+- Tailwind CSS
+- Media queries
+
+
+### What I learned
+
+- **GraphQL Queries**
+  How to write GraphQL queries to fetch data from a CMS.
+  
+``` bash
+  export const getPosts = async () => {
+	const query = gql`
+		query MyQuery {
+			postsConnection {
+				edges {
+					node {
+						author {
+							bio
+							name
+							id
+							photo {
+								url
+							}
+						}
+						createdAt
+						slug
+						title
+						exerpt
+						featuredImage {
+							url
+						}
+						categories {
+							name
+							slug
+						}
+					}
+				}
+			}
+		}
+	`;
+
+	const result = await request(graphqlAPI, query);
+
+	return result.postsConnection.edges;
+};
 ```
 
+- **Typescript**
+  How to use interfaces to define more complex data type objects.
 ```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
+export interface Posts {
+  posts: {
+    node: {
+      title: string
+      exerpt: string
+      featuredImage: {url: string}
+      slug: string
+      createdAt: string
+      author: {name: string; photo: {url: string}}
+    }
+      }[]
+}
 ```
-
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
