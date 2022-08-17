@@ -29,7 +29,60 @@ This is a revamp of my personal recipe blog site. I have run this site for many 
 
 ### What I learned
 
-(tobe continued)
+- **GraphQL Queries**
+  How to write GraphQL queries to fetch data from a CMS.
+  
+``` bash
+  export const getPosts = async () => {
+	const query = gql`
+		query MyQuery {
+			postsConnection {
+				edges {
+					node {
+						author {
+							bio
+							name
+							id
+							photo {
+								url
+							}
+						}
+						createdAt
+						slug
+						title
+						exerpt
+						featuredImage {
+							url
+						}
+						categories {
+							name
+							slug
+						}
+					}
+				}
+			}
+		}
+	`;
 
-- **Q Objects**
-  To execute more complex queries with django ORM (for example, queries with OR statements) you need to use Q objects. I used them at multiple places in my views and they make up my simple search feature work.
+	const result = await request(graphqlAPI, query);
+
+	return result.postsConnection.edges;
+};
+```
+
+- **Typescript**
+  How to use interfaces to define more complex data type objects.
+```bash
+export interface Posts {
+  posts: {
+    node: {
+      title: string
+      exerpt: string
+      featuredImage: {url: string}
+      slug: string
+      createdAt: string
+      author: {name: string; photo: {url: string}}
+    }
+      }[]
+}
+```
