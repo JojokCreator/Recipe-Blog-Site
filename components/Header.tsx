@@ -25,7 +25,7 @@ const Header = () => {
                     </Link>
                     </div>
                     <div className="flex text-4xl text-white ml-4">
-                        <Link href="/youtube.com">
+                        <Link href="https://www.youtube.com/channel/UCsPGY5C60Rj0-rEdZlR9HsQ">
                             <div className="hover:cursor-pointer hover:opacity-80 ml-2"><FaYoutube /></div>
                         </Link>
                         <Link href="/instagram.com">
