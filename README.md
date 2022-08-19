@@ -20,7 +20,7 @@ This is a revamp of my personal recipe blog site. I have run this site for many 
 
 ### Built with
 - [Next.JS](https://nextjs.org/) - React Framework
-- [GrapQL](https://hygraph.com/) - Headless content management system that is completely GraphQL native
+- [GraphQL](https://hygraph.com/) - Headless content management system that is completely GraphQL native
 - Javascript
 - Semantic HTML5 markup
 - Tailwind CSS
