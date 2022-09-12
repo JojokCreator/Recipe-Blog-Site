@@ -27,7 +27,6 @@ const Home: NextPage<Posts> = ( { posts } ) => {
   return (
     <div className="container mx-auto px-10 mb-8">
       <Head>
-      <html lang="en-us" />
         <title>Barefoot Recipes</title>
         <meta name='description' content='Barefoot Chef Recipes and Homebrew from Asia and beyond' />
         <link rel="icon" href="/favicon.ico" />
