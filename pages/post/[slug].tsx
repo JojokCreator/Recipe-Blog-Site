@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { PostDetail, Categories, PostWidget, Author, Comments, CommentForm, Loader } from '../../components';
 import { getPosts, getPostsDetails } from '../../services';
 import AdjacentPosts from '../../sections/AdjacentPosts';
-import { Head } from 'next/document';
+import Head from 'next/head';
 
 type SlugProps = {
   post: {
