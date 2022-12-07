@@ -1,13 +1,9 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import { PostCard,  Categories, PostWidget} from '../components'
 import { getPosts } from '../services'
 import { GetStaticProps } from 'next'
-import { Layout } from '../components'
-import { ReactElement } from 'react';
 import FeaturedPosts from '../sections/FeaturedPosts'
-import { title } from 'process'
 
 export interface Posts {
   posts: {
@@ -29,6 +25,7 @@ const Home: NextPage<Posts> = ( { posts } ) => {
       <Head>
         <title>Barefoot Recipes</title>
         <meta name='description' content='Barefoot Chef Recipes and Homebrew from Asia and beyond' />
+        <meta name='keywords' content='Asian Food, Cooking, Blog, Brewing' />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <FeaturedPosts />

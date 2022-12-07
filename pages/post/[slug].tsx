@@ -2,29 +2,29 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import { PostDetail, Categories, PostWidget, Author, Comments, CommentForm, Loader } from '../../components';
 import { getPosts, getPostsDetails } from '../../services';
-import { NextPage, GetStaticProps } from 'next';
 import AdjacentPosts from '../../sections/AdjacentPosts';
+import { Head } from 'next/document';
 
 type SlugProps = {
   post: {
     title: string
     exerpt: string
-    featuredImage: {url: string}
+    featuredImage: { url: string }
     slug: string
     createdAt: string
-    author: {name: string; photo: {url: string}; bio: string}
-    categories: {name: string; slug:string}[]
-    content: {raw: {children: {type: string, children: any}[]} }
-    }
+    author: { name: string; photo: { url: string }; bio: string }
+    categories: { name: string; slug: string }[]
+    content: { raw: { children: { type: string, children: any }[] } }
+  }
 }
 
 type Params = {
-	params: {
-		slug: string
-	}
+  params: {
+    slug: string
+  }
 }
 
-const PostDetails = ( { post }: SlugProps) => {
+const PostDetails = ({ post }: SlugProps) => {
   const router = useRouter();
   if (router.isFallback) {
     return <Loader />;
@@ -33,11 +33,28 @@ const PostDetails = ( { post }: SlugProps) => {
   return (
     <>
       <div className="container mx-auto px-10 mb-8">
+        <Head>
+          <meta charSet="utf-8" />
+          <title>{post.title}</title>
+          <meta name="description" content={post.exerpt} />
+
+          <meta name="theme-color" content="#000000" />
+
+          <meta name="og:type" content="article" />
+          <meta name="og:title" content={post.title} />
+
+          <meta
+            name="og:url"
+            content={router.pathname}
+          />
+          <meta name="og:description" content={post.exerpt} />
+          <meta name="og:image" content={post.featuredImage.url} />
+        </Head>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="col-span-1 lg:col-span-8">
-            <PostDetail post={post}/>
-            <Author author={post.author} /> 
-            <AdjacentPosts slug={post.slug} createdAt={post.createdAt} /> 
+            <PostDetail post={post} />
+            <Author author={post.author} />
+            <AdjacentPosts slug={post.slug} createdAt={post.createdAt} />
             <CommentForm slug={post.slug} />
             <Comments slug={post.slug} />
           </div>
