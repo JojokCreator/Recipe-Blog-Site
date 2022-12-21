@@ -44,7 +44,7 @@ const PostDetails = ({ post }: SlugProps) => {
         <Head>
           <meta charSet="utf-8" />
           <title>{post.title}</title>
-          <link rel="canonical" href={"https://barefootrecipe.com/post/"+ post.slug}   />
+          <link rel="canonical" href={"https://www.barefootrecipe.com/post/"+ post.slug}   />
           <meta name="description" content={post.exerpt} />
 
           <meta name="theme-color" content="#000000" />
