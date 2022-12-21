@@ -27,6 +27,7 @@ const Home: NextPage<Posts> = ({ posts }) => {
           name="description"
           content="Barefoot Chef Recipes and Homebrew from Asia and beyond"
         />
+        <link rel="canonical" href="https://barefootrecipe.com/" />
         <meta name="keywords" content="Asian Food, Cooking, Blog, Brewing" />
         {/* twitter meta tags */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -45,7 +46,7 @@ const Home: NextPage<Posts> = ({ posts }) => {
           content="Barefoot Recipes"
           key="Barefoot Recipes"
         />
-        <meta property="og:url" content="https://barefootrecipe/" key="ogurl" />
+        <meta property="og:url" content="https://barefootrecipe.com/" key="ogurl" />
         <meta property="og:type" content="article" key="ogtype" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
