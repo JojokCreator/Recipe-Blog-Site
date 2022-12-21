@@ -27,7 +27,7 @@ const Home: NextPage<Posts> = ({ posts }) => {
           name="description"
           content="Barefoot Chef Recipes and Homebrew from Asia and beyond"
         />
-        <link rel="canonical" href="https://barefootrecipe.com/" />
+        <link rel="canonical" href="https://www.barefootrecipe.com/" />
         <meta name="keywords" content="Asian Food, Cooking, Blog, Brewing" />
         {/* twitter meta tags */}
         <meta name="twitter:card" content="summary_large_image" />
