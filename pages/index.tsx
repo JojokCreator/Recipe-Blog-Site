@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { PostCard, Categories, PostWidget } from "../components";
+import { PostCard, Categories, PostWidget, Footer } from "../components";
 import { getPosts } from "../services";
 import { GetStaticProps } from "next";
 import FeaturedPosts from "../sections/FeaturedPosts";
@@ -64,6 +64,7 @@ const Home: NextPage<Posts> = ({ posts }) => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
