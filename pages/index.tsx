@@ -36,7 +36,7 @@ const Home: NextPage<Posts> = ({ posts }) => {
           name="twitter:description"
           content="Barefoot Chef Recipes and Homebrew from Asia and beyond"
         />
-        <meta name="twitter:image" content={"/favicon.ico"} />
+        <meta name="twitter:image" content="/blog.jpg" />
         {/* open graph tags */}
         <meta property="og:title" content="Barefoot Recipes" key="ogtitle" />
         <meta property="og:description" content="Asian Food, Cooking, Blog, Brewing" key="ogdesc" />
