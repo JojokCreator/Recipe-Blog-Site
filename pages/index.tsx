@@ -31,19 +31,19 @@ const Home: NextPage<Posts> = ({ posts }) => {
         <meta name="keywords" content="Asian Food, Cooking, Blog, Brewing" />
         {/* twitter meta tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Barefoot Recipes" />
+        <meta name="twitter:title" content="Barefoot Chef Recipes Site" />
         <meta
           name="twitter:description"
           content="Barefoot Chef Recipes and Homebrew from Asia and beyond"
         />
         <meta name="twitter:image:src" content="https://www.barefootrecipe.com/blog.jpg" />
         {/* open graph tags */}
-        <meta property="og:title" content="Barefoot Recipes" key="ogtitle" />
-        <meta property="og:description" content="Asian Food, Cooking, Blog, Brewing" key="ogdesc" />
+        <meta property="og:title" content="Barefoot Chef Recipes Site" key="ogtitle" />
+        <meta property="og:description" content="Get inspired in the kitchen with recipes from Asia and beyond, learn how to brew your own beer, wine, and other drinks at home" key="ogdesc" />
         <meta property="og:image" content="https://www.barefootrecipe.com/blog.jpg" key="ogimage" />
         <meta
           property="og:site_name"
-          content="Barefoot Recipes"
+          content="Barefoot Chef Recipes Site"
           key="Barefoot Recipes"
         />
         <meta property="og:url" content="https://barefootrecipe.com/" key="ogurl" />

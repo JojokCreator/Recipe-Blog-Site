@@ -56,7 +56,7 @@ const PostDetails = ({ post }: SlugProps) => {
           <meta name="og:description" content={post.exerpt} />
           <meta name="og:image" content={post.featuredImage.url} />
           {/* twitter tags */}
-          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:card" content="summary" />
           <meta name="twitter:title" content={post.title} />
           <meta
             name="twitter:description"
