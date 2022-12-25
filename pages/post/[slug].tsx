@@ -62,7 +62,7 @@ const PostDetails = ({ post }: SlugProps) => {
             name="twitter:description"
             content={post.exerpt}
           />
-          <meta name="twitter:image" content={post.featuredImage.url} />
+          <meta name="twitter:image:src" content={post.featuredImage.url} />
         </Head>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="col-span-1 lg:col-span-8">
