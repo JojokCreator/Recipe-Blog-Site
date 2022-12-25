@@ -40,7 +40,7 @@ const Home: NextPage<Posts> = ({ posts }) => {
         {/* open graph tags */}
         <meta property="og:title" content="Barefoot Recipes" key="ogtitle" />
         <meta property="og:description" content="Asian Food, Cooking, Blog, Brewing" key="ogdesc" />
-        <meta property="og:image" content="/favicon.ico" key="ogimage" />
+        <meta property="og:image" content="/blog.jpg" key="ogimage" />
         <meta
           property="og:site_name"
           content="Barefoot Recipes"
