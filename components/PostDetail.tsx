@@ -68,14 +68,14 @@ const PostDetail = ({ post }: Props) => {
   return (
     <>
       <div className="bg-white shadow-lg rounded-lg lg:p-8 pb-12 mb-8">
-        <div className="relative overflow-hidden shadow-md mb-6">
+        <div className="relative flex justify-center overflow-hidden shadow-md">
           <Image 
           src={post.featuredImage.url} 
           //layout="fill" 
           height="400"
           width="400"
           alt="" 
-          className="object-top h-full w-full object-cover  shadow-lg rounded-t-lg lg:rounded-lg" />
+          className="shadow-lg rounded-t-lg lg:rounded-lg"/>
         </div>
         <div className="px-4 lg:px-0">
           <div className="flex items-center mb-8 w-full">
