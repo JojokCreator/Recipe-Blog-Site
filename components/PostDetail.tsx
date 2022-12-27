@@ -1,6 +1,7 @@
 import React from 'react'
 import { ReactElement, ReactNode } from 'react'
 import moment from 'moment';
+import Image from 'next/image';
 
 interface Props {
   post: {
@@ -16,7 +17,7 @@ interface Props {
 }
 
 const PostDetail = ({ post }: Props) => {
-  console.log(post.content)
+
   const getContentFragment = (index: any, text:any, obj:any, type:any) => {
     let modifiedText = text;
 
@@ -52,7 +53,7 @@ const PostDetail = ({ post }: Props) => {
         );
       case 'image':
         return (
-          <img
+          <Image
             key={index}
             alt={obj.title}
             height={obj.height}
@@ -68,12 +69,18 @@ const PostDetail = ({ post }: Props) => {
     <>
       <div className="bg-white shadow-lg rounded-lg lg:p-8 pb-12 mb-8">
         <div className="relative overflow-hidden shadow-md mb-6">
-          <img src={post.featuredImage.url} alt="" className="object-top h-full w-full object-cover  shadow-lg rounded-t-lg lg:rounded-lg" />
+          <Image 
+          src={post.featuredImage.url} 
+          //layout="fill" 
+          height="400"
+          width="400"
+          alt="" 
+          className="object-top h-full w-full object-cover  shadow-lg rounded-t-lg lg:rounded-lg" />
         </div>
         <div className="px-4 lg:px-0">
           <div className="flex items-center mb-8 w-full">
             <div className="hidden md:flex justify-center lg:mb-0 lg:w-auto mr-8 items-center">
-              <img
+              <Image
                 alt={post.author.name}
                 height="30px"
                 width="30px"

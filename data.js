@@ -12,31 +12,6 @@ export const data = {
                 "url": "https://media.graphassets.com/exE6aAjcQ06f2PXndvnS"
               }
             },
-            "createdAt": "2022-07-30T12:34:23.75961+00:00",
-            "slug": "achar",
-            "title": "Malaysian Achar Achar: Spicy Pickled Vegetables",
-            "exerpt": "Achar Achar is a pickled vegetable dish that is popular in Malaysia and Indonesia. It is made by pickling a mixture of vegetables in a spicy and tangy sauce that includes dried chili peppers and shrimp paste. The vegetables used in Achar Achar can vary, but common options include cucumbers, carrots, onions, and bell peppers. The dried chili peppers add heat to the dish, while the shrimp paste adds a strong umami flavor. Achar Achar is typically served as a garnish or side dish, but it can also be enjoyed as a vegetarian lunch on its own or with rice.",
-            "featuredImage": {
-              "url": "https://media.graphassets.com/7DuJh67Qku407K8ynZno"
-            },
-            "categories": [
-              {
-                "name": "Malaysian Food",
-                "slug": "malaysianfood"
-              }
-            ]
-          }
-        },
-        {
-          "node": {
-            "author": {
-              "bio": "This is the barefoot chef",
-              "name": "Barefoot Chef",
-              "id": "cl67vevaxzczl0el991o4h8gp",
-              "photo": {
-                "url": "https://media.graphassets.com/exE6aAjcQ06f2PXndvnS"
-              }
-            },
             "createdAt": "2022-07-30T17:03:17.211379+00:00",
             "slug": "real-lap-cheong",
             "title": "Chinese Sausages - 广式腊肠",
@@ -48,31 +23,6 @@ export const data = {
               {
                 "name": "Malaysian Food",
                 "slug": "malaysianfood"
-              }
-            ]
-          }
-        },
-        {
-          "node": {
-            "author": {
-              "bio": "This is the barefoot chef",
-              "name": "Barefoot Chef",
-              "id": "cl67vevaxzczl0el991o4h8gp",
-              "photo": {
-                "url": "https://media.graphassets.com/exE6aAjcQ06f2PXndvnS"
-              }
-            },
-            "createdAt": "2022-08-04T07:18:48.96321+00:00",
-            "slug": "mango-wine",
-            "title": "Sparkling Mango Wine",
-            "exerpt": "A sparkling wine made from mango's. It's actually more like a cider in terms of how it's made.",
-            "featuredImage": {
-              "url": "https://media.graphassets.com/9TqveOBHRO63ssYo3wY6"
-            },
-            "categories": [
-              {
-                "name": "Homebrew",
-                "slug": "homebrew"
               }
             ]
           }
