@@ -17,8 +17,10 @@
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-icons": "^4.4.0",
+    "react-infinite-scroll-component": "^6.1.0",
     "react-multi-carousel": "^2.8.2",
-    "sass": "^1.54.0"
+    "sass": "^1.54.0",
+    "twitter-api-v2": "^1.13.0"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.182",
