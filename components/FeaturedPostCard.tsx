@@ -20,7 +20,8 @@ const FeaturedPostCard = ({ post }:FeaturedPostCardProps ) => (
   <div className="relative h-72">
     <div className="absolute rounded-lg bg-center bg-no-repeat bg-cover shadow-md inline-block w-full h-72">
     <Image 
-    src={post.featuredImage.url} 
+    src={post.featuredImage.url}
+    alt={post.title} 
     layout="fill"
     objectFit='cover'
     />
