@@ -1,7 +1,6 @@
 import React from 'react'
 import moment from 'moment';
 import Image from 'next/image';
-import StructuredData from './StructuredData';
 
 interface Props {
   post: {
@@ -72,6 +71,7 @@ const PostDetail = ({ post }: Props) => {
           src={post.featuredImage.url} 
           height="400"
           width="640"
+          priority={true}
           alt="" 
           className="shadow-lg rounded-t-lg lg:rounded-lg"/>
         </div>
