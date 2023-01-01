@@ -42,10 +42,10 @@ const PostDetails = ({ post }: SlugProps) => {
   const array = post.content.raw.children
 
   const startIndex = array.findIndex(obj => obj.children[0].text.toLowerCase() === 'ingredients');
-  const endIndex = array.findIndex(obj => obj.children[0].text.toLowerCase() === 'instructions');
-  const ingredArray = array.slice(startIndex, endIndex)
+  const endIndex = array.findIndex(obj => obj.type === 'image')
+  const ingredArray = array.slice(startIndex+1, endIndex-1)
   for (let i = 0; i<ingredArray.length; i++){
-    if(ingredArray[i].children[0].text != ""){
+    if(ingredArray[i].children[0].text != "" && !ingredArray[i].children[0].underline){
       ingredients.push(ingredArray[i].children[0].text)
     }
   }
@@ -57,7 +57,6 @@ const PostDetails = ({ post }: SlugProps) => {
       steps.push({"@type": "HowToStep", "text": newArray[i].children[0].text})
     }
   }
- 
 
   const structuredData = {
     "@context": "https://schema.org/",
