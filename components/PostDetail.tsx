@@ -17,23 +17,6 @@ interface Props {
 }
 
 const PostDetail = ({ post }: Props) => {
-  const structuredData = {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
-    headline: post.title,
-    description: post.exerpt,
-    author: [
-      {
-        '@type': 'Person',
-        name: post.author.name,
-      },
-    ],
-    image: post.featuredImage.url,
-    datePublished: post.createdAt,
-  };
-
-  <StructuredData data={structuredData} />
-
   const getContentFragment = (index: any, text:any, obj:any, type:any) => {
     let modifiedText = text;
 
