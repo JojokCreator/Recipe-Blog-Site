@@ -109,7 +109,6 @@ const PostDetails = ({ post }: SlugProps) => {
     //  }
   }
 
-  console.log(structuredData)
   return (
     <>
       <div className="container mx-auto px-10 mb-8">
