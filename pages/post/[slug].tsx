@@ -12,7 +12,6 @@ import {
 import { getPosts, getPostsDetails } from "../../services";
 import AdjacentPosts from "../../sections/AdjacentPosts";
 import Head from "next/head";
-import StructuredData from "../../components/StructuredData";
 
 type SlugProps = {
   post: {
