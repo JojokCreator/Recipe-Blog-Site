@@ -12,6 +12,7 @@ import {
 import { getPosts, getPostsDetails } from "../../services";
 import AdjacentPosts from "../../sections/AdjacentPosts";
 import Head from "next/head";
+import StructuredData from "../../components/StructuredData";
 
 type SlugProps = {
   post: {
@@ -38,6 +39,21 @@ const PostDetails = ({ post }: SlugProps) => {
     return <Loader />;
   }
 
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.exerpt,
+    author: [
+      {
+        '@type': 'Person',
+        name: post.author.name,
+      },
+    ],
+    image: post.featuredImage.url,
+    datePublished: post.createdAt,
+  };
+
   return (
     <>
       <div className="container mx-auto px-10 mb-8">
@@ -63,6 +79,13 @@ const PostDetails = ({ post }: SlugProps) => {
             content={post.exerpt}
           />
           <meta name="twitter:image" content={post.featuredImage.url} />
+
+          <script
+          key="structured-data"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+          />
+
         </Head>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="col-span-1 lg:col-span-8">
