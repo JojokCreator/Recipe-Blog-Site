@@ -1,7 +1,7 @@
 import React from 'react'
-import { ReactElement, ReactNode } from 'react'
 import moment from 'moment';
 import Image from 'next/image';
+import StructuredData from './StructuredData';
 
 interface Props {
   post: {
@@ -17,6 +17,22 @@ interface Props {
 }
 
 const PostDetail = ({ post }: Props) => {
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.exerpt,
+    author: [
+      {
+        '@type': 'Person',
+        name: post.author.name,
+      },
+    ],
+    image: post.featuredImage.url,
+    datePublished: post.createdAt,
+  };
+
+  <StructuredData data={structuredData} />
 
   const getContentFragment = (index: any, text:any, obj:any, type:any) => {
     let modifiedText = text;
@@ -71,7 +87,6 @@ const PostDetail = ({ post }: Props) => {
         <div className="relative flex justify-center overflow-hidden shadow-md">
           <Image 
           src={post.featuredImage.url} 
-          //layout="fill" 
           height="400"
           width="640"
           alt="" 

@@ -16,8 +16,8 @@ const rwClient = client.readWrite
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
-      await rwClient.v2.tweet(`Sweet, fruity, and perfect for sipping on a hot summer day. #mangowine #winelover https://www.barefootrecipe.com/post/${data.data.postsConnection.edges[2].node.slug} `);
-      res.status(200).json(data.data.postsConnection.edges[2].node.slug);
+      await rwClient.v2.tweet(`The savory and slightly sweet flavor is a game changer. If you haven't tried them yet, add them to your list of must-try cured meats. #chinesesausage" https://barefootrecipe.com/post/${data.data.postsConnection.edges[0].node.slug} `);
+      res.status(200).json(data.data.postsConnection.edges[0].node.slug);
     };
     
     export default handler;
