@@ -73,7 +73,7 @@ const PostDetail = ({ post }: Props) => {
           src={post.featuredImage.url} 
           //layout="fill" 
           height="400"
-          width="400"
+          width="640"
           alt="" 
           className="shadow-lg rounded-t-lg lg:rounded-lg"/>
         </div>
