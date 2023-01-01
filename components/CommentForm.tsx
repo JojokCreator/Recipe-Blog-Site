@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { submitComment } from '../services'
 
 type CommentsFormProps = {
@@ -10,23 +10,22 @@ const CommentsForm = ({ slug }: CommentsFormProps) => {
   const [localStorage, setLocalStorage] = useState<any>(null)
   const [showSuccessMessage, setShowSuccessMessage] = useState(false)
   const [formData, setFormData] = useState<any>({
-    name: null,
-    email: null,
-    comment: null,
-    storeData: false,
+    name: '',
+    email: '',
+    comment: '',
   })
 
-  useEffect(() => {
-    setLocalStorage(window.localStorage)
-    const initalFormData = {
-      name: window.localStorage.getItem('name'),
-      email: window.localStorage.getItem('email'),
-      storeData:
-        window.localStorage.getItem('name') ||
-        window.localStorage.getItem('email'),
-    }
-    setFormData(initalFormData)
-  }, [])
+  // useEffect(() => {
+  //   setLocalStorage(window.localStorage)
+  //   const initalFormData = {
+  //     name: window.localStorage.getItem('name'),
+  //     email: window.localStorage.getItem('email'),
+  //     storeData:
+  //       window.localStorage.getItem('name') ||
+  //       window.localStorage.getItem('email'),
+  //   }
+  //   setFormData(initalFormData)
+  // }, [])
 
   const onInputChange = (e: any) => {
     const { target } = e
@@ -57,13 +56,13 @@ const CommentsForm = ({ slug }: CommentsFormProps) => {
       slug,
     }
 
-    if (storeData) {
-      localStorage.setItem('name', name)
-      localStorage.setItem('email', email)
-    } else {
-      localStorage.removeItem('name')
-      localStorage.removeItem('email')
-    }
+    // if (storeData) {
+    //   localStorage.setItem('name', name)
+    //   localStorage.setItem('email', email)
+    // } else {
+    //   localStorage.removeItem('name')
+    //   localStorage.removeItem('email')
+    // }
 
     submitComment(commentObj).then((res) => {
       if (res.createComment) {
@@ -116,7 +115,7 @@ const CommentsForm = ({ slug }: CommentsFormProps) => {
         />
       </div>
       <div className="grid grid-cols-1 gap-4 mb-4">
-        <div>
+        {/* <div>
           <input
             checked={formData.storeData}
             onChange={onInputChange}
@@ -129,7 +128,7 @@ const CommentsForm = ({ slug }: CommentsFormProps) => {
             {' '}
             Save my name, email in this browser for the next time I comment.
           </label>
-        </div>
+        </div> */}
       </div>
       {error && (
         <p className="text-xs text-red-500">All fields are mandatory</p>
