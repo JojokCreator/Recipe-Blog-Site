@@ -1,7 +1,7 @@
-import { NextApiRequest, NextApiResponse } from "next";
-import TwitterApi from 'twitter-api-v2';
-import { TwitterApiTokens } from "twitter-api-v2/dist/esm/types";
-import { data } from '../../data'
+import { NextApiRequest, NextApiResponse } from 'next'
+import TwitterApi from 'twitter-api-v2'
+import { TwitterApiTokens } from 'twitter-api-v2/dist/esm/types'
+import { getPosts } from "../../services";
 
 const tokens: TwitterApiTokens = {
   appKey: process.env.TWITTER_API_KEY as string,
@@ -15,9 +15,20 @@ const client = new TwitterApi(tokens)
 const rwClient = client.readWrite
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
+  //get the data
+  const data = await getPosts()
 
-      await rwClient.v2.tweet(`The savory and slightly sweet flavor is a game changer. If you haven't tried them yet, add them to your list of must-try cured meats. #chinesesausage" https://barefootrecipe.com/post/${data.data.postsConnection.edges[0].node.slug} `);
-      res.status(200).json(data.data.postsConnection.edges[0].node.slug);
-    };
-    
-    export default handler;
+  //get the total number of tweets
+  const result = await client.v2.get('users/1607016952588865543/tweets',)
+  const totalTweets = (result.data.length-4)
+
+  const post= (data[totalTweets].node.excerpt.split(".")[0])
+  const url = `https://barefootrecipe.com/post/${data[totalTweets].node.slug}`
+  const hashTags = data[totalTweets].node.slug.split("-").join(" #")
+
+  await rwClient.v2.tweet(`${post}. #${hashTags} ${url}`);
+  res.status(200).json(`${data[totalTweets].node.slug} created successfully`);
+  //res.status(200).json(`${post}. #${hashTags} ${url}`);
+}
+
+export default handler
