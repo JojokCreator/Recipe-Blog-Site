@@ -50,7 +50,7 @@ This is a revamp of my personal recipe blog site. I have run this site for many 
 						createdAt
 						slug
 						title
-						exerpt
+						excerpt
 						featuredImage {
 							url
 						}
@@ -77,7 +77,7 @@ export interface Posts {
   posts: {
     node: {
       title: string
-      exerpt: string
+      excerpt: string
       featuredImage: {url: string}
       slug: string
       createdAt: string

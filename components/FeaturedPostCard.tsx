@@ -6,7 +6,7 @@ import Link from 'next/link';
 type FeaturedPostCardProps = {
     post: {
       title: string
-      exerpt: string
+      excerpt: string
       featuredImage: {url: string}
       slug: string
       createdAt: string

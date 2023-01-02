@@ -5,7 +5,7 @@ import Image from "next/image";
 interface Props {
   post: {
     title: string;
-    exerpt: string;
+    excerpt: string;
     featuredImage: { url: string };
     slug: string;
     createdAt: string;
@@ -49,7 +49,7 @@ const PostCard = ({ post }: Props) => {
         </div>
       </div>
       <p className="text-center text-lg text-grey-700 font-normal px-4 lg:px-20 mb-8">
-        {post.exerpt}
+        {post.excerpt}
       </p>
       <div className="text-center">
         <Link href={`/post/${post.slug}`}>

@@ -6,7 +6,7 @@ import Image from 'next/image';
 type AdjacentPostCardProps = {
     post: {
       title: string
-      exerpt: string
+      excerpt: string
       featuredImage: {url: string}
       slug: string
       createdAt: string
