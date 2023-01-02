@@ -15,7 +15,7 @@ import Head from 'next/head'
 type SlugProps = {
   post: {
     title: string
-    exerpt: string
+    excerpt: string
     featuredImage: { url: string }
     slug: string
     createdAt: string
@@ -68,7 +68,7 @@ const PostDetails = ({ post }: SlugProps) => {
       "name": post.author.name
     },
     "datePublished": post.createdAt,
-    "description": post.exerpt,
+    "description": post.excerpt,
     "recipeCuisine": post.categories[0].name,
     "prepTime": "PT1M",
     "cookTime": "PT2M",
@@ -119,7 +119,7 @@ const PostDetails = ({ post }: SlugProps) => {
             rel="canonical"
             href={'https://www.barefootrecipe.com/post/' + post.slug}
           />
-          <meta name="description" content={post.exerpt} />
+          <meta name="description" content={post.excerpt} />
 
           <meta name="theme-color" content="#000000" />
           {/* open graph tags */}
@@ -127,12 +127,12 @@ const PostDetails = ({ post }: SlugProps) => {
           <meta name="og:title" content={post.title} />
 
           <meta name="og:url" content={router.pathname} />
-          <meta name="og:description" content={post.exerpt} />
+          <meta name="og:description" content={post.excerpt} />
           <meta name="og:image" content={post.featuredImage.url} />
           {/* twitter tags */}
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:title" content={post.title} />
-          <meta name="twitter:description" content={post.exerpt} />
+          <meta name="twitter:description" content={post.excerpt} />
           <meta name="twitter:image" content={post.featuredImage.url} />
 
           <script

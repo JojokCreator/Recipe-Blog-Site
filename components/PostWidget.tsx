@@ -12,7 +12,7 @@ type Props = {
 
 interface Posts {
       title: string
-      exerpt: string
+      excerpt: string
       featuredImage: {url: string}
       slug: string
       createdAt: string

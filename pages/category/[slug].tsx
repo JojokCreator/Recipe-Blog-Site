@@ -9,7 +9,7 @@ export interface CategoryPostPosts {
     posts: {
       node: {
         title: string
-        exerpt: string
+        excerpt: string
         featuredImage: {url: string}
         slug: string
         createdAt: string
