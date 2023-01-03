@@ -9,7 +9,8 @@ const countPosts = async () => {
   const response = await fetch(`https://graph.facebook.com/v15.0/108454552132944/feed?access_token=${process.env.FACEBOOK_ACCESS_TOKEN}`)
 
   const data = await response.json();
- 
+  console.log(data)
+
   let postNumber = (data.data.length-3)
   return postNumber;
 }
