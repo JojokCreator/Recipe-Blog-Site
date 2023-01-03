@@ -21,7 +21,7 @@ type SlugProps = {
     createdAt: string
     author: { name: string; photo: { url: string }; bio: string }
     categories: { name: string; slug: string }[]
-    content: { raw: { children: { type: string; children: any }[] } }
+    content: { raw: { children: { type: string; children: any; url: string }[] } }
   }
 }
 
@@ -58,6 +58,8 @@ const PostDetails = ({ post }: SlugProps) => {
     }
   }
 
+  const videoUrl = post.content.raw.children[post.content.raw.children.length-2].url
+
   const structuredData = {
     "@context": "https://schema.org/",
     "@type": "Recipe",
@@ -73,7 +75,7 @@ const PostDetails = ({ post }: SlugProps) => {
     "prepTime": "PT1M",
     "cookTime": "PT2M",
     "totalTime": "PT3M",
-    //"keywords": "non-alcoholic",
+    "keywords": post.categories[0].name,
     "recipeYield": "1 serving",
     "recipeCategory": post.categories[0].name,
     // "nutrition": {
@@ -87,26 +89,22 @@ const PostDetails = ({ post }: SlugProps) => {
     // },
     "recipeIngredient": ingredients,
     "recipeInstructions": steps,
-    // "video": {
-    //   "@type": "VideoObject",
-    //   "name": "How to make a Party Coffee Cake",
-    //   "description": "This is how you make a Party Coffee Cake.",
-    //   "thumbnailUrl": [
-    //     "https://example.com/photos/1x1/photo.jpg",
-    //     "https://example.com/photos/4x3/photo.jpg",
-    //     "https://example.com/photos/16x9/photo.jpg"
-    //    ],
-    //   "contentUrl": "https://www.example.com/video123.mp4",
-    //   "embedUrl": "https://www.example.com/videoplayer?video=123",
-    //   "uploadDate": "2018-02-05T08:00:00+08:00",
-    //   "duration": "PT1M33S",
-    //   "interactionStatistic": {
-    //     "@type": "InteractionCounter",
-    //     "interactionType": { "@type": "WatchAction" },
-    //     "userInteractionCount": 2347
-    //   },
-    //   "expires": "2019-02-05T08:00:00+08:00"
-    //  }
+    "video": {
+      "@type": "VideoObject",
+      "name": post.title,
+      "description": post.excerpt,
+      "thumbnailUrl": [ post.featuredImage.url ],
+      "contentUrl": videoUrl,
+      "embedUrl": videoUrl,
+      "uploadDate": post.createdAt,
+      // "duration": "PT1M33S",
+      // "interactionStatistic": {
+      //   "@type": "InteractionCounter",
+      //   "interactionType": { "@type": "WatchAction" },
+      //   "userInteractionCount": 2347
+      // },
+      // "expires": "2019-02-05T08:00:00+08:00"
+     }
   }
 
   return (
