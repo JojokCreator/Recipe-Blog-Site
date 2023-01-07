@@ -28,10 +28,10 @@ const Header = () => {
                         <Link href="https://www.youtube.com/channel/UCsPGY5C60Rj0-rEdZlR9HsQ">
                             <div className="hover:cursor-pointer hover:opacity-80 ml-2"><FaYoutube /></div>
                         </Link>
-                        <Link href="/instagram.com">
+                        <Link href="https://www.instagram.com/_barefootchef/">
                         <div className="hover:cursor-pointer hover:opacity-80 ml-2"><FaInstagram /></div>
                         </Link>
-                        <Link href="/facebook.com">
+                        <Link href="https://www.facebook.com/profile.php?id=100088855823587">
                         <div className="hover:cursor-pointer hover:opacity-80 ml-2"><FaFacebookF /></div>
                         </Link>
                 </div>
@@ -43,6 +43,11 @@ const Header = () => {
                             </span>
                         </Link>
                     ))}
+                    <Link href={`/travels`}>
+                            <span className="md:float-right mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">
+                                Travels
+                            </span>
+                        </Link>
                 </div>
             </div>
         </div>
