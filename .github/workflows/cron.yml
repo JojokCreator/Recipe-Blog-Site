@@ -16,7 +16,6 @@ jobs:
     steps:
     - name: Run a one-line script
         run: echo Hello, world!
-
       #- name: tweet
         #uses: Satak/webrequest-action@v1.2.3
         #with:
