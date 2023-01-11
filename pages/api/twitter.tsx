@@ -20,7 +20,8 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
   //get the total number of tweets
   const result = await client.v2.get('users/1607016952588865543/tweets',)
-  const totalTweets = (result.data.length-4)
+  console.log(data)
+  const totalTweets = (result.data.length-1)
 
   const post= (data[totalTweets].node.excerpt.split(".")[0])
   const url = `https://barefootrecipe.com/post/${data[totalTweets].node.slug}`
@@ -28,7 +29,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
   await rwClient.v2.tweet(`${post}. #${hashTags} ${url}`);
   res.status(200).json(`${data[totalTweets].node.slug} created successfully`);
-  //res.status(200).json(`${post}. #${hashTags} ${url}`);
+  //res.status(200).json(data[totalTweets].node.slug);
 }
 
 export default handler
