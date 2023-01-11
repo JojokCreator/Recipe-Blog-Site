@@ -11,7 +11,7 @@ const countPosts = async () => {
   const data = await response.json();
   console.log(data)
 
-  let postNumber = (data.data.length-3)
+  let postNumber = (data.data.length-2)
   return postNumber;
 }
     const postNumber = await countPosts()
