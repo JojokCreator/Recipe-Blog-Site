@@ -4,7 +4,7 @@ const graphqlAPI: any = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;
 
 export const getPosts = async () => {
 	const query = gql`
-		query MyQuery {
+		query getPosts {
 			postsConnection(first: 20 orderBy: createdAt_DESC) {
 				edges {
 					node {
@@ -34,13 +34,12 @@ export const getPosts = async () => {
 	`;
 
 	const result = await request(graphqlAPI, query);
-
 	return result.postsConnection.edges;
 };
 
 export const getRecentPosts = async () => {
 	const query = gql`
-    query GetPostDetails() {
+    query getRecentPosts {
       posts(
         orderBy: createdAt_ASC
         last: 3
@@ -64,7 +63,7 @@ export const getSimilarPosts = async (
 	slug: string,
 ) => {
 	const query = gql`
-    query GetPostDetails($slug: String!, $categories: [String!]) {
+    query getSimilarPosts($slug: String!, $categories: [String!]) {
       posts(
         where: {slug_not: $slug, AND: {categories_some: {slug_in: $categories}}}
           last: 3
@@ -85,7 +84,7 @@ export const getSimilarPosts = async (
 
 export const getPostsDetails = async (slug: string | undefined) => {
 	const query = gql`
-	  query GetPostDetails($slug : String!) {
+	  query getPostsDetails($slug : String!) {
 		post(where: {slug: $slug}) {
 		  title
 		  excerpt
@@ -113,7 +112,6 @@ export const getPostsDetails = async (slug: string | undefined) => {
 	`;
 
 	const result = await request(graphqlAPI, query, { slug });
-
 	return result.post;
 };
 
@@ -145,7 +143,7 @@ export const submitComment = async (obj: any) => {
 
 export const getComments = async (slug: string) => {
 	const query = gql`
-		query GetComments($slug: String!) {
+		query getComments($slug: String!) {
 			comments(where: {post: {slug: $slug}}){
 			name
 			createdAt
@@ -160,7 +158,7 @@ export const getComments = async (slug: string) => {
 
 export const getFeaturedPosts = async () => {
 	const query = gql`
-	  query GetCategoryPost() {
+	  query getFeaturedPosts {
 		posts(where: {featuredPost: true}) {
 		  author {
 			name
@@ -184,7 +182,7 @@ export const getFeaturedPosts = async () => {
 
 export const getAdjacentPosts = async (createdAt: string, slug: string) => {
 	const query = gql`
-	  query GetAdjacentPosts($createdAt: DateTime!,$slug:String!) {
+	  query getAdjacentPosts($createdAt: DateTime!,$slug:String!) {
 		next:posts(
 		  first: 1
 		  orderBy: createdAt_ASC
@@ -256,7 +254,7 @@ export const getCategoryPost = async (slug: string) => {
 
 export const getBlogs = async () => {
 	const query = gql`
-			query MyQuery {
+			query getBlogs {
 				blogsConnection(first: 20 orderBy: createdAt_DESC) {
 					edges {
 						node {
@@ -277,7 +275,7 @@ export const getBlogs = async () => {
 
 export const getBlogsDetails = async (slug: string | undefined) => {
 	const query = gql`
-			query GetBlogsDetails($slug : String!) {
+			query getBlogsDetails($slug : String!) {
 			blog(where: {slug: $slug}) {
 					title
 					excerpt
