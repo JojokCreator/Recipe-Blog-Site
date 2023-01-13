@@ -21,7 +21,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   //get the total number of tweets
   const result = await client.v2.get('users/1607016952588865543/tweets',)
   console.log(data)
-  const totalTweets = (result.data.length-1)
+  const totalTweets = (result.data.length)
 
   const post= (data[totalTweets].node.excerpt.split(".")[0])
   const url = `https://barefootrecipe.com/post/${data[totalTweets].node.slug}`
