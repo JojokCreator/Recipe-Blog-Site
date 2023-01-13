@@ -7,7 +7,7 @@
     "sitemap": "next-sitemap",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest --watch --detectOpenHandles",
+    "test": "jest",
     "test:ci": "jest --ci"
   },
   "dependencies": {
