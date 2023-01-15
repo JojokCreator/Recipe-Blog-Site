@@ -27,7 +27,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const url = `https://barefootrecipe.com/post/${data[totalTweets].node.slug}`
   const hashTags = data[totalTweets].node.slug.split("-").join(" #")
 
-  // await rwClient.v2.tweet(`${post}. #${hashTags} ${url}`);
+  await rwClient.v2.tweet(`${post}. #${hashTags} ${url}`);
   res.status(200).json(`${data[totalTweets].node.slug} created successfully`);
   //res.status(200).json(data[totalTweets].node.slug);
 }
