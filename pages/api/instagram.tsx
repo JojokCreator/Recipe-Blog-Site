@@ -19,41 +19,41 @@ const countPosts = async () => {
     const text= `${data[postNumber].node.title} - https://barefootrecipe.com/post/${data[postNumber].node.slug}`
     const imageUrl = data[postNumber].node.featuredImage.url
 
-  // const response = await fetch(`https://graph.facebook.com/v15.0/17841457516696875/media?image_url=${imageUrl}&caption=${text}&access_token=${process.env.FACEBOOK_ACCESS_TOKEN}`, {
-  //   "headers": {
-  //     "accept": "*/*",
-  //     "accept-language": "en-GB-oxendict,en;q=0.8",
-  //     "content-type": "application/x-www-form-urlencoded",
-  //     "sec-fetch-dest": "empty",
-  //     "sec-fetch-mode": "cors",
-  //     "sec-fetch-site": "same-site",
-  //     "sec-gpc": "1"
-  //   },
-  //   "referrer": "https://developers.facebook.com/",
-  //   "referrerPolicy": "origin-when-cross-origin",
-  //   "method": "POST",
-  //   "mode": "cors",
-  //   "credentials": "omit"
-  // });
-  // const { id } = await response.json()
-  // console.log(id);
+  const response = await fetch(`https://graph.facebook.com/v15.0/17841457516696875/media?image_url=${imageUrl}&caption=${text}&access_token=${process.env.FACEBOOK_ACCESS_TOKEN}`, {
+    "headers": {
+      "accept": "*/*",
+      "accept-language": "en-GB-oxendict,en;q=0.8",
+      "content-type": "application/x-www-form-urlencoded",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-site",
+      "sec-gpc": "1"
+    },
+    "referrer": "https://developers.facebook.com/",
+    "referrerPolicy": "origin-when-cross-origin",
+    "method": "POST",
+    "mode": "cors",
+    "credentials": "omit"
+  });
+  const { id } = await response.json()
+  console.log(id);
 
-  // const result = await fetch(`https://graph.facebook.com/v15.0/17841457516696875/media_publish?creation_id=${id}&access_token=${process.env.FACEBOOK_ACCESS_TOKEN}`, {
-  //   "headers": {
-  //     "accept": "*/*",
-  //     "accept-language": "en-GB-oxendict,en;q=0.8",
-  //     "content-type": "application/x-www-form-urlencoded",
-  //     "sec-fetch-dest": "empty",
-  //     "sec-fetch-mode": "cors",
-  //     "sec-fetch-site": "same-site",
-  //     "sec-gpc": "1"
-  //   },
-  //   "referrer": "https://developers.facebook.com/",
-  //   "referrerPolicy": "origin-when-cross-origin",
-  //   "method": "POST",
-  //   "mode": "cors",
-  //   "credentials": "omit"
-  // });
+  const result = await fetch(`https://graph.facebook.com/v15.0/17841457516696875/media_publish?creation_id=${id}&access_token=${process.env.FACEBOOK_ACCESS_TOKEN}`, {
+    "headers": {
+      "accept": "*/*",
+      "accept-language": "en-GB-oxendict,en;q=0.8",
+      "content-type": "application/x-www-form-urlencoded",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-site",
+      "sec-gpc": "1"
+    },
+    "referrer": "https://developers.facebook.com/",
+    "referrerPolicy": "origin-when-cross-origin",
+    "method": "POST",
+    "mode": "cors",
+    "credentials": "omit"
+  });
       //console.log(result)
       res.status(200).json(data[postNumber].node.slug + " was posted successfully");
     };
