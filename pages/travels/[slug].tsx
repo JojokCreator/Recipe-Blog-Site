@@ -23,7 +23,7 @@ type Params = {
   }
 }
 
-const blogDetails = ({ blog }: SlugProps) => {
+const BlogDetails = ({ blog }: SlugProps) => {
   const router = useRouter()
   if (router.isFallback) {
     return <Loader />
@@ -149,7 +149,7 @@ const blogDetails = ({ blog }: SlugProps) => {
     </>
   )
 }
-export default blogDetails
+export default BlogDetails
 
 export const getStaticProps = async ({ params }: Params) => {
   const data = await getBlogsDetails(params.slug)

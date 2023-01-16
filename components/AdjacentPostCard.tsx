@@ -24,6 +24,7 @@ const AdjacentPostCard = ({ post, position }: AdjacentPostCardProps) => (
     src={post.featuredImage.url} 
     layout="fill"
     objectFit='cover'
+    alt="featured image"
     />
     </div>
     {/* style={{ backgroundImage: `url('${post.featuredImage.url}')` }} /> */}

@@ -30,6 +30,7 @@ const PostWidget = ({ categories, slug }: Props) => {
     } else {
       getRecentPosts().then((result) => setRelatedPosts(result))
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [slug])
 
   return (
