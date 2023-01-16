@@ -91,8 +91,8 @@ const BlogDetail = ({ blog }: Props) => {
             <div className="hidden md:flex justify-center lg:mb-0 lg:w-auto mr-8 items-center">
               {/* <Image
                 alt={blog.author.name}
-                height="30px"
-                width="30px"
+                height="30"
+                width="30"
                 className="align-middle rounded-full"
                 src={blog.author.photo.url}
               /> */}

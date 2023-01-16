@@ -1,4 +1,5 @@
-import React, { useContext, useState, useEffect } from 'react';
+"use client"
+import React, { useState, useEffect } from 'react';
 import Link from "next/link"
 import { getCategories } from '../services';
 import { FaYoutube, FaInstagram, FaFacebookF } from 'react-icons/fa/';
