@@ -17,6 +17,7 @@ const Comments = ({ slug }: CommentsProps) => {
   useEffect(() => {
     getComments(slug)
       .then((result) => setComments(result))
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
   
   return (    
