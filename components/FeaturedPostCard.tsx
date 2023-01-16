@@ -1,4 +1,3 @@
-import React from 'react';
 import moment from 'moment';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -34,8 +33,8 @@ const FeaturedPostCard = ({ post }:FeaturedPostCardProps ) => (
         <Image
           unoptimized
           alt={post.author.name}
-          height="30px"
-          width="30px"
+          height="30"
+          width="30"
           className="align-middle drop-shadow-lg rounded-full"
           src={post.author.photo.url}
         />

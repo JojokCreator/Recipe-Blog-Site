@@ -1,5 +1,6 @@
+"use client"
 import moment from 'moment';
-import React, { useRef, useState, useEffect } from 'react' 
+import { useState, useEffect } from 'react' 
 import { getComments } from './../services/index';
 
 type CommentsProps = {
@@ -17,8 +18,7 @@ const Comments = ({ slug }: CommentsProps) => {
   useEffect(() => {
     getComments(slug)
       .then((result) => setComments(result))
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, [slug])
   
   return (    
     <>

@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useState, useEffect } from 'react'
 import moment from 'moment'
 import Link from 'next/link'
@@ -30,8 +32,7 @@ const PostWidget = ({ categories, slug }: Props) => {
     } else {
       getRecentPosts().then((result) => setRelatedPosts(result))
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [slug])
+  }, [slug, categories])
 
   return (
     <div className="bg-white shadow-lg rounded-lg p-8 mb-8">
@@ -43,8 +44,8 @@ const PostWidget = ({ categories, slug }: Props) => {
           <div className="w-16 flex-none">
             <Image
               alt={post.title}
-              height="50px"
-              width="60px"
+              height="50"
+              width="60"
               className="align-middle rounded-full"
               src={post.featuredImage.url}
             />
