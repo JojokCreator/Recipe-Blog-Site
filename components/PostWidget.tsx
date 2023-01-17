@@ -5,7 +5,7 @@ import moment from 'moment'
 import Link from 'next/link'
 import { getRecentPosts, getSimilarPosts } from '../services'
 import { isEmpty } from 'lodash'
-import Image from 'next/image'
+import Image from "next/legacy/image";
 
 type Props = {
   categories: string[]

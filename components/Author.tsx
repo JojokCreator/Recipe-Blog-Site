@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image';
+import Image from "next/legacy/image";
 
 interface AuthorProps{
   author: {name: string; photo: {url: string}; bio: string}

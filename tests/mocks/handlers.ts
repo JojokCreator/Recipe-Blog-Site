@@ -4,6 +4,7 @@ const endpoint: any = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;
 
 export const handlers = [
   graphql.query("getPosts", (req: any, res: any, ctx: any) => {
+    console.log(mocks)
     return res(
       ctx.data(
         mocks)
