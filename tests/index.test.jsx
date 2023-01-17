@@ -7,7 +7,6 @@ describe('Home', () => {
   it('renders a heading', async () => {
     render(<Header categories={[]} />)
     const heading = screen.getByText('Barefoot Chef Blog')
-    screen.debug()
     expect(heading).toBeInTheDocument()
   })
 

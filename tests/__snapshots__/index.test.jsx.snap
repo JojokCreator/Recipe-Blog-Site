@@ -21,570 +21,556 @@ exports[`Home snapshot matches previous 1`] = `
     <div
       class="grid grid-cols-1 lg:grid-cols-12 gap-12"
     >
-      <div
-        class="lg:col-span-8 col-span-1"
+      <ul
+        class="lg:col-span-8 col-span-1 list-none"
       >
-        <ul>
-          <li>
-            <div
-              class="bg-white shadow-lg rounded-lg p-2 lg:p-8 pb-12 mb-8"
+        <li
+          class="bg-white shadow-lg rounded-lg p-2 lg:p-8 pb-12 mb-8"
+        >
+          <div
+            class="relative overflow-hidden shadow-md pb-80 mb-6"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
             >
-              <div
-                class="relative overflow-hidden shadow-md pb-80 mb-6"
+              <img
+                alt="Pork Adobo"
+                class="object-top absolute h-80 w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg"
+                data-nimg="fill"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+              />
+              <noscript />
+            </span>
+          </div>
+          <h1
+            class="transition duration-700 text-center mb-8 cursor-pointer hover:text-indigo-600 text-3xl font-semibold "
+          >
+            <a
+              href="/post/pork-adobo"
+            >
+              Pork Adobo
+            </a>
+          </h1>
+          <div
+            class="block lg:flex text-center items-center justify-center mb-8 w-full"
+          >
+            <div
+              class="flex items-cent justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8"
+            >
+              <span
+                style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
               >
                 <span
-                  style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+                  style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
                 >
                   <img
-                    alt="Pork Adobo"
-                    class="object-top absolute h-80 w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg"
-                    data-nimg="fill"
-                    decoding="async"
-                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                    style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                    alt=""
+                    aria-hidden="true"
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2730%27%20height=%2730%27/%3e"
+                    style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
                   />
-                  <noscript />
                 </span>
-              </div>
-              <h1
-                class="transition duration-700 text-center mb-8 cursor-pointer hover:text-indigo-600 text-3xl font-semibold "
-              >
-                <a
-                  href="/post/pork-adobo"
-                >
-                  Pork Adobo
-                </a>
-              </h1>
-              <div
-                class="block lg:flex text-center items-center justify-center mb-8 w-full"
-              >
-                <div
-                  class="flex items-cent justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8"
-                >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-                  >
-                    <span
-                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-                    >
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2730%27%20height=%2730%27/%3e"
-                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                      />
-                    </span>
-                    <img
-                      alt="Barefoot Chef"
-                      class="align-middle rounded-full"
-                      data-nimg="intrinsic"
-                      decoding="async"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
-                  <p
-                    class="inline align-middle text-grey-700 ml-2 text-lg"
-                  >
-                    Barefoot Chef
-                  </p>
-                </div>
-                <div
-                  class="font-medium text-gray-700"
-                >
-                  <span>
-                    Jan 07, 2023
-                  </span>
-                </div>
-              </div>
+                <img
+                  alt="Barefoot Chef"
+                  class="align-middle rounded-full"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                />
+                <noscript />
+              </span>
               <p
-                class="text-center text-lg text-grey-700 font-normal px-4 lg:px-20 mb-8"
+                class="inline align-middle text-grey-700 ml-2 text-lg"
               >
-                Pork Adobo is a popular dish in the Philippines that is made by braising pork in a mixture of soy sauce, vinegar, and spices.
+                Barefoot Chef
               </p>
-              <div
-                class="text-center"
-              >
-                <a
-                  href="/post/pork-adobo"
-                >
-                  <span
-                    class="transition duration-500 transform hover:-translate-y-1 inline-block bg-indigo-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer"
-                  >
-                    Continue Reading
-                  </span>
-                </a>
-              </div>
             </div>
-          </li>
-          <li>
             <div
-              class="bg-white shadow-lg rounded-lg p-2 lg:p-8 pb-12 mb-8"
+              class="font-medium text-gray-700"
             >
-              <div
-                class="relative overflow-hidden shadow-md pb-80 mb-6"
+              <span>
+                Jan 07, 2023
+              </span>
+            </div>
+          </div>
+          <p
+            class="text-center text-lg text-grey-700 font-normal px-4 lg:px-20 mb-8"
+          >
+            Pork Adobo is a popular dish in the Philippines that is made by braising pork in a mixture of soy sauce, vinegar, and spices.
+          </p>
+          <div
+            class="text-center"
+          >
+            <a
+              href="/post/pork-adobo"
+            >
+              <span
+                class="transition duration-500 transform hover:-translate-y-1 inline-block bg-indigo-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer"
+              >
+                Continue Reading
+              </span>
+            </a>
+          </div>
+        </li>
+        <li
+          class="bg-white shadow-lg rounded-lg p-2 lg:p-8 pb-12 mb-8"
+        >
+          <div
+            class="relative overflow-hidden shadow-md pb-80 mb-6"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="Rendang - Slow cooked Dry Curry"
+                class="object-top absolute h-80 w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg"
+                data-nimg="fill"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+              />
+              <noscript />
+            </span>
+          </div>
+          <h1
+            class="transition duration-700 text-center mb-8 cursor-pointer hover:text-indigo-600 text-3xl font-semibold "
+          >
+            <a
+              href="/post/rendang"
+            >
+              Rendang - Slow cooked Dry Curry
+            </a>
+          </h1>
+          <div
+            class="block lg:flex text-center items-center justify-center mb-8 w-full"
+          >
+            <div
+              class="flex items-cent justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8"
+            >
+              <span
+                style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
               >
                 <span
-                  style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+                  style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
                 >
                   <img
-                    alt="Rendang - Slow cooked Dry Curry"
-                    class="object-top absolute h-80 w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg"
-                    data-nimg="fill"
-                    decoding="async"
-                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                    style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                    alt=""
+                    aria-hidden="true"
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2730%27%20height=%2730%27/%3e"
+                    style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
                   />
-                  <noscript />
                 </span>
-              </div>
-              <h1
-                class="transition duration-700 text-center mb-8 cursor-pointer hover:text-indigo-600 text-3xl font-semibold "
-              >
-                <a
-                  href="/post/rendang"
-                >
-                  Rendang - Slow cooked Dry Curry
-                </a>
-              </h1>
-              <div
-                class="block lg:flex text-center items-center justify-center mb-8 w-full"
-              >
-                <div
-                  class="flex items-cent justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8"
-                >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-                  >
-                    <span
-                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-                    >
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2730%27%20height=%2730%27/%3e"
-                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                      />
-                    </span>
-                    <img
-                      alt="Barefoot Chef"
-                      class="align-middle rounded-full"
-                      data-nimg="intrinsic"
-                      decoding="async"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
-                  <p
-                    class="inline align-middle text-grey-700 ml-2 text-lg"
-                  >
-                    Barefoot Chef
-                  </p>
-                </div>
-                <div
-                  class="font-medium text-gray-700"
-                >
-                  <span>
-                    Dec 26, 2022
-                  </span>
-                </div>
-              </div>
+                <img
+                  alt="Barefoot Chef"
+                  class="align-middle rounded-full"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                />
+                <noscript />
+              </span>
               <p
-                class="text-center text-lg text-grey-700 font-normal px-4 lg:px-20 mb-8"
+                class="inline align-middle text-grey-700 ml-2 text-lg"
               >
-                Rendang is a dry curry which includes a mixture of spices and coconut milk, and then slow-cooked over low heat until it is tender and falling apart. The sauce is reduced and thickened as the meat cooks, creating a rich and flavorful coating that is perfect for serving over rice.
+                Barefoot Chef
               </p>
-              <div
-                class="text-center"
-              >
-                <a
-                  href="/post/rendang"
-                >
-                  <span
-                    class="transition duration-500 transform hover:-translate-y-1 inline-block bg-indigo-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer"
-                  >
-                    Continue Reading
-                  </span>
-                </a>
-              </div>
             </div>
-          </li>
-          <li>
             <div
-              class="bg-white shadow-lg rounded-lg p-2 lg:p-8 pb-12 mb-8"
+              class="font-medium text-gray-700"
             >
-              <div
-                class="relative overflow-hidden shadow-md pb-80 mb-6"
+              <span>
+                Dec 26, 2022
+              </span>
+            </div>
+          </div>
+          <p
+            class="text-center text-lg text-grey-700 font-normal px-4 lg:px-20 mb-8"
+          >
+            Rendang is a dry curry which includes a mixture of spices and coconut milk, and then slow-cooked over low heat until it is tender and falling apart. The sauce is reduced and thickened as the meat cooks, creating a rich and flavorful coating that is perfect for serving over rice.
+          </p>
+          <div
+            class="text-center"
+          >
+            <a
+              href="/post/rendang"
+            >
+              <span
+                class="transition duration-500 transform hover:-translate-y-1 inline-block bg-indigo-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer"
+              >
+                Continue Reading
+              </span>
+            </a>
+          </div>
+        </li>
+        <li
+          class="bg-white shadow-lg rounded-lg p-2 lg:p-8 pb-12 mb-8"
+        >
+          <div
+            class="relative overflow-hidden shadow-md pb-80 mb-6"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="Laksa - Curry Prawn Noodle Soup"
+                class="object-top absolute h-80 w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg"
+                data-nimg="fill"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+              />
+              <noscript />
+            </span>
+          </div>
+          <h1
+            class="transition duration-700 text-center mb-8 cursor-pointer hover:text-indigo-600 text-3xl font-semibold "
+          >
+            <a
+              href="/post/laksa-prawn-curry"
+            >
+              Laksa - Curry Prawn Noodle Soup
+            </a>
+          </h1>
+          <div
+            class="block lg:flex text-center items-center justify-center mb-8 w-full"
+          >
+            <div
+              class="flex items-cent justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8"
+            >
+              <span
+                style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
               >
                 <span
-                  style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+                  style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
                 >
                   <img
-                    alt="Laksa - Curry Prawn Noodle Soup"
-                    class="object-top absolute h-80 w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg"
-                    data-nimg="fill"
-                    decoding="async"
-                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                    style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                    alt=""
+                    aria-hidden="true"
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2730%27%20height=%2730%27/%3e"
+                    style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
                   />
-                  <noscript />
                 </span>
-              </div>
-              <h1
-                class="transition duration-700 text-center mb-8 cursor-pointer hover:text-indigo-600 text-3xl font-semibold "
-              >
-                <a
-                  href="/post/laksa-prawn-curry"
-                >
-                  Laksa - Curry Prawn Noodle Soup
-                </a>
-              </h1>
-              <div
-                class="block lg:flex text-center items-center justify-center mb-8 w-full"
-              >
-                <div
-                  class="flex items-cent justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8"
-                >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-                  >
-                    <span
-                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-                    >
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2730%27%20height=%2730%27/%3e"
-                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                      />
-                    </span>
-                    <img
-                      alt="Barefoot Chef"
-                      class="align-middle rounded-full"
-                      data-nimg="intrinsic"
-                      decoding="async"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
-                  <p
-                    class="inline align-middle text-grey-700 ml-2 text-lg"
-                  >
-                    Barefoot Chef
-                  </p>
-                </div>
-                <div
-                  class="font-medium text-gray-700"
-                >
-                  <span>
-                    Sep 13, 2022
-                  </span>
-                </div>
-              </div>
+                <img
+                  alt="Barefoot Chef"
+                  class="align-middle rounded-full"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                />
+                <noscript />
+              </span>
               <p
-                class="text-center text-lg text-grey-700 font-normal px-4 lg:px-20 mb-8"
+                class="inline align-middle text-grey-700 ml-2 text-lg"
               >
-                There are about as many different variations of Laksa as there are towns and city's in Malaysia. Some add more or less spice, clams, more or less coconut. The noodles also vary some people prefer rice noodles but for me the egg noodles are the best.
+                Barefoot Chef
               </p>
-              <div
-                class="text-center"
-              >
-                <a
-                  href="/post/laksa-prawn-curry"
-                >
-                  <span
-                    class="transition duration-500 transform hover:-translate-y-1 inline-block bg-indigo-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer"
-                  >
-                    Continue Reading
-                  </span>
-                </a>
-              </div>
             </div>
-          </li>
-          <li>
             <div
-              class="bg-white shadow-lg rounded-lg p-2 lg:p-8 pb-12 mb-8"
+              class="font-medium text-gray-700"
             >
-              <div
-                class="relative overflow-hidden shadow-md pb-80 mb-6"
+              <span>
+                Sep 13, 2022
+              </span>
+            </div>
+          </div>
+          <p
+            class="text-center text-lg text-grey-700 font-normal px-4 lg:px-20 mb-8"
+          >
+            There are about as many different variations of Laksa as there are towns and city's in Malaysia. Some add more or less spice, clams, more or less coconut. The noodles also vary some people prefer rice noodles but for me the egg noodles are the best.
+          </p>
+          <div
+            class="text-center"
+          >
+            <a
+              href="/post/laksa-prawn-curry"
+            >
+              <span
+                class="transition duration-500 transform hover:-translate-y-1 inline-block bg-indigo-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer"
+              >
+                Continue Reading
+              </span>
+            </a>
+          </div>
+        </li>
+        <li
+          class="bg-white shadow-lg rounded-lg p-2 lg:p-8 pb-12 mb-8"
+        >
+          <div
+            class="relative overflow-hidden shadow-md pb-80 mb-6"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="Homemade Rice Wine (Choujiu)"
+                class="object-top absolute h-80 w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg"
+                data-nimg="fill"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+              />
+              <noscript />
+            </span>
+          </div>
+          <h1
+            class="transition duration-700 text-center mb-8 cursor-pointer hover:text-indigo-600 text-3xl font-semibold "
+          >
+            <a
+              href="/post/rice-wine"
+            >
+              Homemade Rice Wine (Choujiu)
+            </a>
+          </h1>
+          <div
+            class="block lg:flex text-center items-center justify-center mb-8 w-full"
+          >
+            <div
+              class="flex items-cent justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8"
+            >
+              <span
+                style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
               >
                 <span
-                  style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+                  style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
                 >
                   <img
-                    alt="Homemade Rice Wine (Choujiu)"
-                    class="object-top absolute h-80 w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg"
-                    data-nimg="fill"
-                    decoding="async"
-                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                    style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                    alt=""
+                    aria-hidden="true"
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2730%27%20height=%2730%27/%3e"
+                    style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
                   />
-                  <noscript />
                 </span>
-              </div>
-              <h1
-                class="transition duration-700 text-center mb-8 cursor-pointer hover:text-indigo-600 text-3xl font-semibold "
-              >
-                <a
-                  href="/post/rice-wine"
-                >
-                  Homemade Rice Wine (Choujiu)
-                </a>
-              </h1>
-              <div
-                class="block lg:flex text-center items-center justify-center mb-8 w-full"
-              >
-                <div
-                  class="flex items-cent justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8"
-                >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-                  >
-                    <span
-                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-                    >
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2730%27%20height=%2730%27/%3e"
-                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                      />
-                    </span>
-                    <img
-                      alt="Barefoot Chef"
-                      class="align-middle rounded-full"
-                      data-nimg="intrinsic"
-                      decoding="async"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
-                  <p
-                    class="inline align-middle text-grey-700 ml-2 text-lg"
-                  >
-                    Barefoot Chef
-                  </p>
-                </div>
-                <div
-                  class="font-medium text-gray-700"
-                >
-                  <span>
-                    Sep 13, 2022
-                  </span>
-                </div>
-              </div>
+                <img
+                  alt="Barefoot Chef"
+                  class="align-middle rounded-full"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                />
+                <noscript />
+              </span>
               <p
-                class="text-center text-lg text-grey-700 font-normal px-4 lg:px-20 mb-8"
+                class="inline align-middle text-grey-700 ml-2 text-lg"
               >
-                This Choujiu style rice wine is made with glutinous rice and fermented by a very specific yeast. It's similar to Makgeolli in Korea or Doburoku in Japan. It's generally drunk young as it has been for thousands of years.
+                Barefoot Chef
               </p>
-              <div
-                class="text-center"
-              >
-                <a
-                  href="/post/rice-wine"
-                >
-                  <span
-                    class="transition duration-500 transform hover:-translate-y-1 inline-block bg-indigo-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer"
-                  >
-                    Continue Reading
-                  </span>
-                </a>
-              </div>
             </div>
-          </li>
-          <li>
             <div
-              class="bg-white shadow-lg rounded-lg p-2 lg:p-8 pb-12 mb-8"
+              class="font-medium text-gray-700"
             >
-              <div
-                class="relative overflow-hidden shadow-md pb-80 mb-6"
+              <span>
+                Sep 13, 2022
+              </span>
+            </div>
+          </div>
+          <p
+            class="text-center text-lg text-grey-700 font-normal px-4 lg:px-20 mb-8"
+          >
+            This Choujiu style rice wine is made with glutinous rice and fermented by a very specific yeast. It's similar to Makgeolli in Korea or Doburoku in Japan. It's generally drunk young as it has been for thousands of years.
+          </p>
+          <div
+            class="text-center"
+          >
+            <a
+              href="/post/rice-wine"
+            >
+              <span
+                class="transition duration-500 transform hover:-translate-y-1 inline-block bg-indigo-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer"
+              >
+                Continue Reading
+              </span>
+            </a>
+          </div>
+        </li>
+        <li
+          class="bg-white shadow-lg rounded-lg p-2 lg:p-8 pb-12 mb-8"
+        >
+          <div
+            class="relative overflow-hidden shadow-md pb-80 mb-6"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="Red Rice Wine Chicken – 红槽鸡"
+                class="object-top absolute h-80 w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg"
+                data-nimg="fill"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+              />
+              <noscript />
+            </span>
+          </div>
+          <h1
+            class="transition duration-700 text-center mb-8 cursor-pointer hover:text-indigo-600 text-3xl font-semibold "
+          >
+            <a
+              href="/post/red-rice-chicken-noodles"
+            >
+              Red Rice Wine Chicken – 红槽鸡
+            </a>
+          </h1>
+          <div
+            class="block lg:flex text-center items-center justify-center mb-8 w-full"
+          >
+            <div
+              class="flex items-cent justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8"
+            >
+              <span
+                style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
               >
                 <span
-                  style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+                  style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
                 >
                   <img
-                    alt="Red Rice Wine Chicken – 红槽鸡"
-                    class="object-top absolute h-80 w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg"
-                    data-nimg="fill"
-                    decoding="async"
-                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                    style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                    alt=""
+                    aria-hidden="true"
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2730%27%20height=%2730%27/%3e"
+                    style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
                   />
-                  <noscript />
                 </span>
-              </div>
-              <h1
-                class="transition duration-700 text-center mb-8 cursor-pointer hover:text-indigo-600 text-3xl font-semibold "
-              >
-                <a
-                  href="/post/red-rice-chicken-noodles"
-                >
-                  Red Rice Wine Chicken – 红槽鸡
-                </a>
-              </h1>
-              <div
-                class="block lg:flex text-center items-center justify-center mb-8 w-full"
-              >
-                <div
-                  class="flex items-cent justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8"
-                >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-                  >
-                    <span
-                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-                    >
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2730%27%20height=%2730%27/%3e"
-                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                      />
-                    </span>
-                    <img
-                      alt="Barefoot Chef"
-                      class="align-middle rounded-full"
-                      data-nimg="intrinsic"
-                      decoding="async"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
-                  <p
-                    class="inline align-middle text-grey-700 ml-2 text-lg"
-                  >
-                    Barefoot Chef
-                  </p>
-                </div>
-                <div
-                  class="font-medium text-gray-700"
-                >
-                  <span>
-                    Sep 13, 2022
-                  </span>
-                </div>
-              </div>
+                <img
+                  alt="Barefoot Chef"
+                  class="align-middle rounded-full"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                />
+                <noscript />
+              </span>
               <p
-                class="text-center text-lg text-grey-700 font-normal px-4 lg:px-20 mb-8"
+                class="inline align-middle text-grey-700 ml-2 text-lg"
               >
-                This typical Foochow dish called hong jao zi. The rich, red coloured dish is flavoured with thick, aromatic fermented red wine. This dish is traditionally made for mothers during the confinement period after childbirth. Healthy and nutritious enjoyed anytime though.
+                Barefoot Chef
               </p>
-              <div
-                class="text-center"
-              >
-                <a
-                  href="/post/red-rice-chicken-noodles"
-                >
-                  <span
-                    class="transition duration-500 transform hover:-translate-y-1 inline-block bg-indigo-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer"
-                  >
-                    Continue Reading
-                  </span>
-                </a>
-              </div>
             </div>
-          </li>
-          <li>
             <div
-              class="bg-white shadow-lg rounded-lg p-2 lg:p-8 pb-12 mb-8"
+              class="font-medium text-gray-700"
             >
-              <div
-                class="relative overflow-hidden shadow-md pb-80 mb-6"
+              <span>
+                Sep 13, 2022
+              </span>
+            </div>
+          </div>
+          <p
+            class="text-center text-lg text-grey-700 font-normal px-4 lg:px-20 mb-8"
+          >
+            This typical Foochow dish called hong jao zi. The rich, red coloured dish is flavoured with thick, aromatic fermented red wine. This dish is traditionally made for mothers during the confinement period after childbirth. Healthy and nutritious enjoyed anytime though.
+          </p>
+          <div
+            class="text-center"
+          >
+            <a
+              href="/post/red-rice-chicken-noodles"
+            >
+              <span
+                class="transition duration-500 transform hover:-translate-y-1 inline-block bg-indigo-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer"
+              >
+                Continue Reading
+              </span>
+            </a>
+          </div>
+        </li>
+        <li
+          class="bg-white shadow-lg rounded-lg p-2 lg:p-8 pb-12 mb-8"
+        >
+          <div
+            class="relative overflow-hidden shadow-md pb-80 mb-6"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="Red Yeast Rice Wine (Fuzhou Hong Zhao)"
+                class="object-top absolute h-80 w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg"
+                data-nimg="fill"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+              />
+              <noscript />
+            </span>
+          </div>
+          <h1
+            class="transition duration-700 text-center mb-8 cursor-pointer hover:text-indigo-600 text-3xl font-semibold "
+          >
+            <a
+              href="/post/red-yeast-rice-wine"
+            >
+              Red Yeast Rice Wine (Fuzhou Hong Zhao)
+            </a>
+          </h1>
+          <div
+            class="block lg:flex text-center items-center justify-center mb-8 w-full"
+          >
+            <div
+              class="flex items-cent justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8"
+            >
+              <span
+                style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
               >
                 <span
-                  style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+                  style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
                 >
                   <img
-                    alt="Red Yeast Rice Wine (Fuzhou Hong Zhao)"
-                    class="object-top absolute h-80 w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg"
-                    data-nimg="fill"
-                    decoding="async"
-                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                    style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                    alt=""
+                    aria-hidden="true"
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2730%27%20height=%2730%27/%3e"
+                    style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
                   />
-                  <noscript />
                 </span>
-              </div>
-              <h1
-                class="transition duration-700 text-center mb-8 cursor-pointer hover:text-indigo-600 text-3xl font-semibold "
-              >
-                <a
-                  href="/post/red-yeast-rice-wine"
-                >
-                  Red Yeast Rice Wine (Fuzhou Hong Zhao)
-                </a>
-              </h1>
-              <div
-                class="block lg:flex text-center items-center justify-center mb-8 w-full"
-              >
-                <div
-                  class="flex items-cent justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8"
-                >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-                  >
-                    <span
-                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-                    >
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2730%27%20height=%2730%27/%3e"
-                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                      />
-                    </span>
-                    <img
-                      alt="Barefoot Chef"
-                      class="align-middle rounded-full"
-                      data-nimg="intrinsic"
-                      decoding="async"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
-                  <p
-                    class="inline align-middle text-grey-700 ml-2 text-lg"
-                  >
-                    Barefoot Chef
-                  </p>
-                </div>
-                <div
-                  class="font-medium text-gray-700"
-                >
-                  <span>
-                    Sep 13, 2022
-                  </span>
-                </div>
-              </div>
+                <img
+                  alt="Barefoot Chef"
+                  class="align-middle rounded-full"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                />
+                <noscript />
+              </span>
               <p
-                class="text-center text-lg text-grey-700 font-normal px-4 lg:px-20 mb-8"
+                class="inline align-middle text-grey-700 ml-2 text-lg"
               >
-                Used for as an ingriedient than a drink red rice wine can be used as a seasoning for basically anything for example, chicken, pork, fish, tofu, rice, noodles. Fermentation is carried out by a combination of the fungus Aspergillus oryzae, which converts the rice starches into fermentable sugars, and yeast which inturns converts the sugars into alcohol.
+                Barefoot Chef
               </p>
-              <div
-                class="text-center"
-              >
-                <a
-                  href="/post/red-yeast-rice-wine"
-                >
-                  <span
-                    class="transition duration-500 transform hover:-translate-y-1 inline-block bg-indigo-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer"
-                  >
-                    Continue Reading
-                  </span>
-                </a>
-              </div>
             </div>
-          </li>
-        </ul>
-      </div>
+            <div
+              class="font-medium text-gray-700"
+            >
+              <span>
+                Sep 13, 2022
+              </span>
+            </div>
+          </div>
+          <p
+            class="text-center text-lg text-grey-700 font-normal px-4 lg:px-20 mb-8"
+          >
+            Used for as an ingriedient than a drink red rice wine can be used as a seasoning for basically anything for example, chicken, pork, fish, tofu, rice, noodles. Fermentation is carried out by a combination of the fungus Aspergillus oryzae, which converts the rice starches into fermentable sugars, and yeast which inturns converts the sugars into alcohol.
+          </p>
+          <div
+            class="text-center"
+          >
+            <a
+              href="/post/red-yeast-rice-wine"
+            >
+              <span
+                class="transition duration-500 transform hover:-translate-y-1 inline-block bg-indigo-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer"
+              >
+                Continue Reading
+              </span>
+            </a>
+          </div>
+        </li>
+      </ul>
       <div
         class="lg:col-span-4 cols-span-1"
       >
@@ -618,97 +604,95 @@ exports[`Home snapshot matches previous 1`] = `
 
 exports[`PostCard snapshot matches previous 1`] = `
 <div>
-  <li>
+  <li
+    class="bg-white shadow-lg rounded-lg p-2 lg:p-8 pb-12 mb-8"
+  >
     <div
-      class="bg-white shadow-lg rounded-lg p-2 lg:p-8 pb-12 mb-8"
+      class="relative overflow-hidden shadow-md pb-80 mb-6"
+    >
+      <span
+        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+      >
+        <img
+          alt="Pork Adobo"
+          class="object-top absolute h-80 w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg"
+          data-nimg="fill"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+        />
+        <noscript />
+      </span>
+    </div>
+    <h1
+      class="transition duration-700 text-center mb-8 cursor-pointer hover:text-indigo-600 text-3xl font-semibold "
+    >
+      <a
+        href="/post/pork-adobo"
+      >
+        Pork Adobo
+      </a>
+    </h1>
+    <div
+      class="block lg:flex text-center items-center justify-center mb-8 w-full"
     >
       <div
-        class="relative overflow-hidden shadow-md pb-80 mb-6"
+        class="flex items-cent justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8"
       >
         <span
-          style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
         >
+          <span
+            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+          >
+            <img
+              alt=""
+              aria-hidden="true"
+              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2730%27%20height=%2730%27/%3e"
+              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+            />
+          </span>
           <img
-            alt="Pork Adobo"
-            class="object-top absolute h-80 w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg"
-            data-nimg="fill"
+            alt="Barefoot Chef"
+            class="align-middle rounded-full"
+            data-nimg="intrinsic"
             decoding="async"
             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
             style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
           />
           <noscript />
         </span>
-      </div>
-      <h1
-        class="transition duration-700 text-center mb-8 cursor-pointer hover:text-indigo-600 text-3xl font-semibold "
-      >
-        <a
-          href="/post/pork-adobo"
+        <p
+          class="inline align-middle text-grey-700 ml-2 text-lg"
         >
-          Pork Adobo
-        </a>
-      </h1>
+          Barefoot Chef
+        </p>
+      </div>
       <div
-        class="block lg:flex text-center items-center justify-center mb-8 w-full"
+        class="font-medium text-gray-700"
       >
-        <div
-          class="flex items-cent justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8"
-        >
-          <span
-            style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-          >
-            <span
-              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-            >
-              <img
-                alt=""
-                aria-hidden="true"
-                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2730%27%20height=%2730%27/%3e"
-                style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-              />
-            </span>
-            <img
-              alt="Barefoot Chef"
-              class="align-middle rounded-full"
-              data-nimg="intrinsic"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-            <noscript />
-          </span>
-          <p
-            class="inline align-middle text-grey-700 ml-2 text-lg"
-          >
-            Barefoot Chef
-          </p>
-        </div>
-        <div
-          class="font-medium text-gray-700"
-        >
-          <span>
-            Jan 07, 2023
-          </span>
-        </div>
+        <span>
+          Jan 07, 2023
+        </span>
       </div>
-      <p
-        class="text-center text-lg text-grey-700 font-normal px-4 lg:px-20 mb-8"
+    </div>
+    <p
+      class="text-center text-lg text-grey-700 font-normal px-4 lg:px-20 mb-8"
+    >
+      Pork Adobo is a popular dish in the Philippines that is made by braising pork in a mixture of soy sauce, vinegar, and spices.
+    </p>
+    <div
+      class="text-center"
+    >
+      <a
+        href="/post/pork-adobo"
       >
-        Pork Adobo is a popular dish in the Philippines that is made by braising pork in a mixture of soy sauce, vinegar, and spices.
-      </p>
-      <div
-        class="text-center"
-      >
-        <a
-          href="/post/pork-adobo"
+        <span
+          class="transition duration-500 transform hover:-translate-y-1 inline-block bg-indigo-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer"
         >
-          <span
-            class="transition duration-500 transform hover:-translate-y-1 inline-block bg-indigo-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer"
-          >
-            Continue Reading
-          </span>
-        </a>
-      </div>
+          Continue Reading
+        </span>
+      </a>
     </div>
   </li>
 </div>
