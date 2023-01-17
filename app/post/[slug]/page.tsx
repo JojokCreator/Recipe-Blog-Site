@@ -11,10 +11,9 @@ import { getPosts, getPostsDetails } from '../../../services'
 import AdjacentPosts from '../../../sections/AdjacentPosts'
 import { Params, post } from '../../../types'
 
-
 const PostDetails = async ({ params }: Params) => {
   const post: post['node'] = await getPostsDetails(params.slug)
-  
+
   if (!post) {
     return <Loader />
   }
@@ -46,20 +45,9 @@ const PostDetails = async ({ params }: Params) => {
 }
 export default PostDetails
 
-// export const getStaticProps = async ({ params }: Params) => {
-//   const data = await getPostsDetails(params.slug)
-//   return {
-//     props: {
-//       post: data,
-//     },
-//   }
-// }
-export const dynamicParams = true;
+export const dynamicParams = true
 
-// Specify dynamic routes to pre-render pages based on data.
-// The HTML is generated at build time and will be reused on each request.
 export async function generateStaticParams() {
   const posts: post[] = await getPosts()
   return posts.map(({ node: { slug } }) => ({ slug }))
 }
-

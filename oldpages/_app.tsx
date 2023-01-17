@@ -1,8 +1,7 @@
 import '../styles/globals.scss'
-import { Layout } from '../components';
-import { AppProps } from 'next/app';
-import Script from 'next/script';
-
+import { Layout } from '../components'
+import { AppProps } from 'next/app'
+import Script from 'next/script'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -25,7 +24,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Script>
       <Component {...pageProps} />
     </Layout>
-  );
+  )
 }
 
-export default MyApp;
+export default MyApp

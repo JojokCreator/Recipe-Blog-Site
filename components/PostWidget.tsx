@@ -1,11 +1,11 @@
-"use client"
+'use client'
 
 import React, { useState, useEffect } from 'react'
 import moment from 'moment'
 import Link from 'next/link'
 import { getRecentPosts, getSimilarPosts } from '../services'
 import { isEmpty } from 'lodash'
-import Image from "next/legacy/image";
+import Image from 'next/legacy/image'
 
 type Props = {
   categories: string[]

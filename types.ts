@@ -7,7 +7,9 @@ export type post = {
       createdAt: string
       author: { name: string; photo: { url: string }; bio: string }
       categories: { name: string; slug: string }[]
-      content: { raw: { children: { type: string; children: any }[] } }
+      content: { raw: { children: {
+        url: any; type: string; children: any 
+}[] } }
     }
 }
 

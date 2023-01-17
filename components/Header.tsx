@@ -11,11 +11,11 @@ interface Categories {
 const Header = ({ categories }: Categories) => {
   return (
     <div className="container mx-auto px-10 mb-8">
-      <Link href={`/privacy`}>
+      {/* <Link href={`/privacy`}>
         <p className="hover:cursor-pointer float-left text-sm p-2 font-semibold underline">
           Privacy Policy
         </p>
-      </Link>
+      </Link> */}
       <div className="border-b w-full flex justify-between border-blue-400 py-8 ">
         <div className="md:float-left flex">
           <Link href="/">
