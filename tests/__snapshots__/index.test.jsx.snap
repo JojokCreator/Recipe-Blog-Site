@@ -103,8 +103,10 @@ exports[`Home snapshot matches previous 1`] = `
           </p>
           <div
             class="text-center"
+            role="button"
           >
             <a
+              aria-label="Read more about Pork Adobo"
               href="/post/pork-adobo"
             >
               <span
@@ -194,8 +196,10 @@ exports[`Home snapshot matches previous 1`] = `
           </p>
           <div
             class="text-center"
+            role="button"
           >
             <a
+              aria-label="Read more about Rendang - Slow cooked Dry Curry"
               href="/post/rendang"
             >
               <span
@@ -285,8 +289,10 @@ exports[`Home snapshot matches previous 1`] = `
           </p>
           <div
             class="text-center"
+            role="button"
           >
             <a
+              aria-label="Read more about Laksa - Curry Prawn Noodle Soup"
               href="/post/laksa-prawn-curry"
             >
               <span
@@ -376,8 +382,10 @@ exports[`Home snapshot matches previous 1`] = `
           </p>
           <div
             class="text-center"
+            role="button"
           >
             <a
+              aria-label="Read more about Homemade Rice Wine (Choujiu)"
               href="/post/rice-wine"
             >
               <span
@@ -467,8 +475,10 @@ exports[`Home snapshot matches previous 1`] = `
           </p>
           <div
             class="text-center"
+            role="button"
           >
             <a
+              aria-label="Read more about Red Rice Wine Chicken – 红槽鸡"
               href="/post/red-rice-chicken-noodles"
             >
               <span
@@ -558,8 +568,10 @@ exports[`Home snapshot matches previous 1`] = `
           </p>
           <div
             class="text-center"
+            role="button"
           >
             <a
+              aria-label="Read more about Red Yeast Rice Wine (Fuzhou Hong Zhao)"
               href="/post/red-yeast-rice-wine"
             >
               <span
@@ -683,8 +695,10 @@ exports[`PostCard snapshot matches previous 1`] = `
     </p>
     <div
       class="text-center"
+      role="button"
     >
       <a
+        aria-label="Read more about Pork Adobo"
         href="/post/pork-adobo"
       >
         <span

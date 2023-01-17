@@ -88,6 +88,7 @@ const Head = async ({ params }: Params) => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <meta charSet="utf-8" />
       <title>{post.title}</title>
       <link

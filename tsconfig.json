@@ -30,7 +30,7 @@
     "**/*.tsx",
     "pages/post/[slug].tsx",
     ".next/types/**/*.ts"
-  ],
+, "components/Loader.jsx"  ],
   "exclude": [
     "node_modules"
   ]

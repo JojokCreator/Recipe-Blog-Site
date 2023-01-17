@@ -12,11 +12,11 @@ const CategoryPost = async ({ params }: Params) => {
   return (
     <div className="container mx-auto px-10 mb-8">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-        <div className="col-span-1 lg:col-span-8">
+        <ul className="lg:col-span-8 col-span-1 list-none">
           {posts.map((post: post, index: number) => (
             <PostCard key={index} post={post.node} />
           ))}
-        </div>
+        </ul>
         <div className="col-span-1 lg:col-span-4">
           <div className="relative lg:sticky top-8">
             <Categories />
@@ -28,18 +28,8 @@ const CategoryPost = async ({ params }: Params) => {
 }
 export default CategoryPost
 
-// // Fetch data at build time
-// export async function getStaticProps({ params }: Params) {
-//   const posts = await getCategoryPost(params.slug);
-
-//   return {
-//     props: { posts },
-//   };
-// }
-
 export const dynamicParams = true
-// Specify dynamic routes to pre-render pages based on data.
-// The HTML is generated at build time and will be reused on each request.
+
 export async function generateStaticParams() {
   const categories = await getCategories()
   return categories.map(({ slug }: Slug) => ({ slug }))
