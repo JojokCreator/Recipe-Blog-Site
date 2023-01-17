@@ -11,7 +11,7 @@ export default async function RootLayout({
   const categories = await getCategories()
 
   return (
-    <html>
+    <html lang="en-GB">
       <body>
         <Header categories={categories} />
         {children}

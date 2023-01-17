@@ -51,8 +51,8 @@ const PostCard = ({ post }: Props) => {
       <p className="text-center text-lg text-grey-700 font-normal px-4 lg:px-20 mb-8">
         {post.excerpt}
       </p>
-      <div className="text-center">
-        <Link href={`/post/${post.slug}`}>
+      <div className="text-center" role="button">
+        <Link href={`/post/${post.slug}`} aria-label={`Read more about ${post.title}`}>
           <span className="transition duration-500 transform hover:-translate-y-1 inline-block bg-indigo-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">
             Continue Reading
           </span>

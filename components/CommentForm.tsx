@@ -137,6 +137,7 @@ const CommentsForm = ({ slug }: CommentsFormProps) => {
       )}
       <div className="mt-8">
         <button
+          aria-label="Click to post a comment"
           type="button"
           onClick={handlePostSubmission}
           className="transition duration-500 ease hover:bg-indigo-900 inline-block bg-indigo-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer"

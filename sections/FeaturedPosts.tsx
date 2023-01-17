@@ -1,5 +1,4 @@
-'use client'
-
+"use client"
 import { useState, useEffect } from 'react'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
@@ -39,7 +38,7 @@ const FeaturedPosts = () => {
 
   const CustomLeftArrow = ({ onClick }: ArrowProps) => {
     return (
-      <button onClick={onClick}>
+      <button onClick={onClick} aria-label="scroll the featured posts left">
         <div className="absolute arrow-btn left-0 text-center py-3 cursor-pointer rounded-full">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +58,7 @@ const FeaturedPosts = () => {
 
   const CustomRightArrow = ({ onClick }: ArrowProps) => {
     return (
-      <button onClick={onClick}>
+      <button onClick={onClick} aria-label="scroll the featured posts right">
         <div className="absolute arrow-btn right-0 text-center py-3 cursor-pointer rounded-full">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -80,6 +79,7 @@ const FeaturedPosts = () => {
   return (
     <div className="mb-8">
       <Carousel
+        ssr
         infinite
         customLeftArrow={<CustomLeftArrow />}
         customRightArrow={<CustomRightArrow />}
