@@ -1,31 +1,31 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import { PostCard, Categories, PostWidget, Footer } from "../components";
-import { getPosts } from "../services";
-import { GetStaticProps } from "next";
-import FeaturedPosts from "../sections/FeaturedPosts";
-import InfiniteScroll from "react-infinite-scroll-component";
-import { useEffect, useState } from "react";
+import type { NextPage } from 'next'
+import Head from 'next/head'
+import { PostCard, Categories, PostWidget, Footer } from '../components'
+import { getPosts } from '../services'
+import { GetStaticProps } from 'next'
+import FeaturedPosts from '../sections/FeaturedPosts'
+import InfiniteScroll from 'react-infinite-scroll-component'
+import { useEffect, useState } from 'react'
 
 export interface Posts {
   posts: {
     node: {
-      title: string;
-      excerpt: string;
-      featuredImage: { url: string };
-      slug: string;
-      createdAt: string;
-      author: { name: string; photo: { url: string } };
-    };
-  }[];
+      title: string
+      excerpt: string
+      featuredImage: { url: string }
+      slug: string
+      createdAt: string
+      author: { name: string; photo: { url: string } }
+    }
+  }[]
 }
 
 const Home: NextPage<Posts> = ({ posts }) => {
-  const [data, setData] = useState(posts.slice(0, 4));
+  const [data, setData] = useState(posts.slice(0, 4))
   const [hasMore, setHasMore] = useState(true)
-  
+
   const getMorePosts = () => {
-    setData(data => [...data, ...posts.slice(data.length,data.length+3)])
+    setData((data) => [...data, ...posts.slice(data.length, data.length + 3)])
   }
 
   useEffect(() => {
@@ -91,34 +91,33 @@ const Home: NextPage<Posts> = ({ posts }) => {
             hasMore={hasMore}
             loader={<h4 className="text-white">Loading...</h4>}
             endMessage={
-              <p style={{ textAlign: "center" }}>
+              <p style={{ textAlign: 'center' }}>
                 <b className="text-white">Yay! You have seen it all</b>
               </p>
             }
           >
             {data.map((data, index) => (
-            <PostCard post={data.node} key={index} />
-          ))}
+              <PostCard post={data.node} key={index} />
+            ))}
           </InfiniteScroll>
-          
         </div>
         <div className="lg:col-span-4 cols-span-1">
           <div className="lg:sticky relative top-8">
-            <PostWidget categories={[]} slug={""} />
+            <PostWidget categories={[]} slug={''} />
             <Categories />
           </div>
         </div>
       </div>
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
 
 export const getStaticProps: GetStaticProps = async () => {
-  const posts = (await getPosts()) || [];
+  const posts = (await getPosts()) || []
   return {
     props: { posts },
-  };
-};
+  }
+}

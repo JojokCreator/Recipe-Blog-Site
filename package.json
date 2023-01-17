@@ -8,9 +8,12 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest --watch ",
-    "test:ci": "env NODE_ENV=test jest --ci"
+    "test:ci": "env NODE_ENV=test jest --ci",
+    "pretty": "prettier --write \"**/*.tsx\""
+
   },
   "dependencies": {
+    "encoding": "^0.1.13",
     "graphql": "^16.5.0",
     "graphql-request": "^4.3.0",
     "jest-environment-jsdom": "^29.3.1",

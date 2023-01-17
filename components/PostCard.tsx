@@ -1,16 +1,16 @@
-import moment from "moment";
-import Link from "next/link";
-import Image from "next/legacy/image";
+import moment from 'moment'
+import Link from 'next/link'
+import Image from 'next/legacy/image'
 
 interface Props {
   post: {
-    title: string;
-    excerpt: string;
-    featuredImage: { url: string };
-    slug: string;
-    createdAt: string;
-    author: { name: string; photo: { url: string } };
-  };
+    title: string
+    excerpt: string
+    featuredImage: { url: string }
+    slug: string
+    createdAt: string
+    author: { name: string; photo: { url: string } }
+  }
 }
 
 const PostCard = ({ post }: Props) => {
@@ -45,7 +45,7 @@ const PostCard = ({ post }: Props) => {
         </div>
         <div className="font-medium text-gray-700">
           {/* Image or icon */}
-          <span>{moment(post.createdAt).format("MMM DD, YYYY")}</span>
+          <span>{moment(post.createdAt).format('MMM DD, YYYY')}</span>
         </div>
       </div>
       <p className="text-center text-lg text-grey-700 font-normal px-4 lg:px-20 mb-8">
@@ -59,7 +59,7 @@ const PostCard = ({ post }: Props) => {
         </Link>
       </div>
     </li>
-  );
-};
+  )
+}
 
-export default PostCard;
+export default PostCard

@@ -13,9 +13,9 @@ export default async function RootLayout({
   return (
     <html>
       <body>
-      <Header categories={categories} />
+        <Header categories={categories} />
         {children}
-      <Footer/>
+        <Footer />
       </body>
     </html>
   )

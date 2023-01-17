@@ -1,8 +1,5 @@
 import { useRouter } from 'next/router'
-import {
-  Categories,
-  Loader,
-} from '../../components'
+import { Categories, Loader } from '../../components'
 import { getBlogs, getBlogsDetails } from '../../services'
 import Head from 'next/head'
 import BlogDetail from '../../components/BlogDetail'
@@ -13,7 +10,9 @@ type SlugProps = {
     excerpt: string
     slug: string
     createdAt: string
-    content: { raw: { children: { type: string; children: any; url: string }[] } }
+    content: {
+      raw: { children: { type: string; children: any; url: string }[] }
+    }
   }
 }
 
@@ -29,28 +28,34 @@ const BlogDetails = ({ blog }: SlugProps) => {
     return <Loader />
   }
 
-  const steps = [];
-  const ingredients = [];
+  const steps = []
+  const ingredients = []
   const array = blog.content.raw.children
 
-  const startIndex = array.findIndex(obj => obj.children[0].text.toLowerCase() === 'ingredients');
-  const endIndex = array.findIndex(obj => obj.type === 'image')
-  const ingredArray = array.slice(startIndex+1, endIndex-1)
-  for (let i = 0; i<ingredArray.length; i++){
-    if(ingredArray[i].children[0].text != "" && !ingredArray[i].children[0].underline){
+  const startIndex = array.findIndex(
+    (obj) => obj.children[0].text.toLowerCase() === 'ingredients'
+  )
+  const endIndex = array.findIndex((obj) => obj.type === 'image')
+  const ingredArray = array.slice(startIndex + 1, endIndex - 1)
+  for (let i = 0; i < ingredArray.length; i++) {
+    if (
+      ingredArray[i].children[0].text != '' &&
+      !ingredArray[i].children[0].underline
+    ) {
       ingredients.push(ingredArray[i].children[0].text)
     }
   }
-  
-  const index = array.findIndex(obj => obj.type === 'image');
+
+  const index = array.findIndex((obj) => obj.type === 'image')
   const newArray = array.slice(index)
-  for (let i = 0; i<newArray.length; i++){
-    if(newArray[i].children[0].text != ""){
-      steps.push({"@type": "HowToStep", "text": newArray[i].children[0].text})
+  for (let i = 0; i < newArray.length; i++) {
+    if (newArray[i].children[0].text != '') {
+      steps.push({ '@type': 'HowToStep', text: newArray[i].children[0].text })
     }
   }
 
-  const videoUrl = blog.content.raw.children[blog.content.raw.children.length-2].url
+  const videoUrl =
+    blog.content.raw.children[blog.content.raw.children.length - 2].url
 
   // const structuredData = {
   //   "@context": "https://schema.org/",

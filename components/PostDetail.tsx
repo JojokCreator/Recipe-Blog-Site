@@ -1,6 +1,6 @@
 import React from 'react'
 import moment from 'moment'
-import Image from "next/legacy/image";
+import Image from 'next/legacy/image'
 
 interface Props {
   post: {
@@ -60,7 +60,12 @@ const PostDetail = ({ post }: Props) => {
         )
       case 'iframe':
         return (
-          <iframe key={index} src={obj.url} width={obj.width} height={obj.height}></iframe>
+          <iframe
+            key={index}
+            src={obj.url}
+            width={obj.width}
+            height={obj.height}
+          ></iframe>
         )
       case 'image':
         return (

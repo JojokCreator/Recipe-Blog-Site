@@ -6,9 +6,10 @@ export default function Privacy() {
       <div className=" bg-black bg-opacity-50 rounded-lg">
         <h1 className="font-bold text-4xl text-white p-4 ">Privacy Policy</h1>
         <p className="font-bold text-xl text-white p-4">
-          <p>At Barefoot Chef, we are committed to protecting your privacy.
-            This privacy policy explains how we collect, use, and share your
-            personal information when you visit our website.
+          <p>
+            At Barefoot Chef, we are committed to protecting your privacy. This
+            privacy policy explains how we collect, use, and share your personal
+            information when you visit our website.
           </p>
           <h2 className="font-bold text-2xl text-white py-4">
             Information We Collect
@@ -23,7 +24,14 @@ export default function Privacy() {
           is being used and to improve the user experience. Advertising data: We
           use Google AdWords to display ads on our website. AdWords uses cookies
           to track the effectiveness of our ads and to show you relevant ads
-          based on your interests. for more info visit <a className="text-blue-500" href="http://www.google.com/policies/privacy/partners/"> How Google uses data when you use our partners’ sites or apps</a>
+          based on your interests. for more info visit{' '}
+          <a
+            className="text-blue-500"
+            href="http://www.google.com/policies/privacy/partners/"
+          >
+            {' '}
+            How Google uses data when you use our partners’ sites or apps
+          </a>
           <h2 className="font-bold text-2xl text-white py-4">
             How We Use Your Information
           </h2>
@@ -47,7 +55,10 @@ export default function Privacy() {
           changes on this page, so please review it regularly.
           <h2 className="font-bold text-2xl text-white py-4">Contact Us</h2>
           If you have any questions about our privacy policy, please contact us
-          at <a className="text-blue-500" href='mailto: ask@barefootrecipe.com.'>ask@barefootrecipe.com.</a>
+          at{' '}
+          <a className="text-blue-500" href="mailto: ask@barefootrecipe.com.">
+            ask@barefootrecipe.com.
+          </a>
         </p>
         <Link href="/">
           <a className="font-bold text-2xl text-white hover:opacity-80 p-4">
