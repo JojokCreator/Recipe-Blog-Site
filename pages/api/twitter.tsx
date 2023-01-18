@@ -14,21 +14,21 @@ const client = new TwitterApi(tokens)
 
 const rwClient = client.readWrite
 
-const handler = async (req: NextApiRequest, res: NextApiResponse) => {
+const twitter = async () => {
   //get the data
   const data = await getPosts()
 
   //get the total number of tweets
   const result = await client.v2.get('users/1607016952588865543/tweets')
-  const totalTweets = result.data.length-10
+  const totalTweets = result.data.length - 10
 
   const post = data[totalTweets].node.excerpt.split('.')[0]
   const url = `https://barefootrecipe.com/post/${data[totalTweets].node.slug}`
   const hashTags = data[totalTweets].node.slug.split('-').join(' #')
 
   await rwClient.v2.tweet(`${post}. #${hashTags} ${url}`)
-  res.status(200).json(`${data[totalTweets].node.slug} created successfully`)
+  return `${data[totalTweets].node.slug} created successfully`
   //res.status(200).json(data[totalTweets].node.slug);
 }
 
-export default handler
+export default twitter
