@@ -1,6 +1,6 @@
 import React from 'react'
 import moment from 'moment'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 
 interface Props {
   post: {
@@ -60,7 +60,12 @@ const PostDetail = ({ post }: Props) => {
         )
       case 'iframe':
         return (
-          <iframe key={index} src={obj.url} width={obj.width} height={obj.height}></iframe>
+          <iframe
+            key={index}
+            src={obj.url}
+            width={obj.width}
+            height={obj.height}
+          ></iframe>
         )
       case 'image':
         return (
@@ -94,8 +99,8 @@ const PostDetail = ({ post }: Props) => {
             <div className="hidden md:flex justify-center lg:mb-0 lg:w-auto mr-8 items-center">
               <Image
                 alt={post.author.name}
-                height="30px"
-                width="30px"
+                height="30"
+                width="30"
                 className="align-middle rounded-full"
                 src={post.author.photo.url}
               />
