@@ -14,17 +14,26 @@ const Footer = () => {
           </Link>
         </div>
         <div className="flex text-4xl text-white ml-4">
-        <Link href="https://www.youtube.com/channel/UCsPGY5C60Rj0-rEdZlR9HsQ" aria-label='Link to youtube channel'>
+          <Link
+            href="https://www.youtube.com/channel/UCsPGY5C60Rj0-rEdZlR9HsQ"
+            aria-label="Link to youtube channel"
+          >
             <div className="hover:cursor-pointer hover:opacity-80 ml-2">
               <FaYoutube />
             </div>
           </Link>
-          <Link href="https://www.instagram.com/_barefootchef/" aria-label='Link to instagram page'>
+          <Link
+            href="https://www.instagram.com/_barefootchef/"
+            aria-label="Link to instagram page"
+          >
             <div className="hover:cursor-pointer hover:opacity-80 ml-2">
               <FaInstagram />
             </div>
           </Link>
-          <Link href="https://www.facebook.com/profile.php?id=100088855823587" aria-label='Link to facebook page'>
+          <Link
+            href="https://www.facebook.com/profile.php?id=100088855823587"
+            aria-label="Link to facebook page"
+          >
             <div className="hover:cursor-pointer hover:opacity-80 ml-2">
               <FaFacebookF />
             </div>

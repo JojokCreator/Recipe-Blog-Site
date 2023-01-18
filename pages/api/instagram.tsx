@@ -3,7 +3,7 @@ import { getPosts } from '../../services'
 
 //https://graph.facebook.com/oauth/access_token?client_id=${process.env.FACEBOOKS_APP_ID}&client_secret=${process.env.FACEBOOKS_APP_SECRET}&grant_type=client_credentials
 
-const handler = async (req: NextApiRequest, res: NextApiResponse) => {
+const instagram = async () => {
   const countPosts = async () => {
     const response = await fetch(
       `https://graph.facebook.com/v15.0/17841457516696875/media?access_token=${process.env.FACEBOOK_ACCESS_TOKEN}`
@@ -14,7 +14,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     let postNumber = data.data.length
     return postNumber
   }
-  const postNumber = await countPosts() -17
+  const postNumber = (await countPosts()) - 17
 
   const data = await getPosts()
   const text = `${data[postNumber].node.title} - https://barefootrecipe.com/post/${data[postNumber].node.slug}`
@@ -62,7 +62,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     }
   )
   //console.log(result)
-  res.status(200).json(data[postNumber].node.slug + ' was posted successfully')
+  return data[postNumber].node.slug + ' was posted successfully'
 }
 
-export default handler
+export default instagram
