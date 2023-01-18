@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next'
-import { getPosts } from '../../services'
-import json from '../../data.json'
+import { getPosts } from '../services'
+import json from '../data.json'
 //https://graph.facebook.com/oauth/access_token?client_id=${process.env.FACEBOOKS_APP_ID}&client_secret=${process.env.FACEBOOKS_APP_SECRET}&grant_type=client_credentials
 
 const facebook = async () => {
