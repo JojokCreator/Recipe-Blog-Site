@@ -14,8 +14,8 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     let postNumber = data.data.length
     return postNumber
   }
-  const postNumber = await countPosts()
-  console.log(postNumber)
+  const postNumber = await countPosts() -17
+
   const data = await getPosts()
   const text = `${data[postNumber].node.title} - https://barefootrecipe.com/post/${data[postNumber].node.slug}`
   const imageUrl = data[postNumber].node.featuredImage.url
