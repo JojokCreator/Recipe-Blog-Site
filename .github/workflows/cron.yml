@@ -1,4 +1,4 @@
-name: Tweets
+name: Social
 
 # Controls when the workflow will run
 on:
@@ -17,5 +17,5 @@ jobs:
         uses: Satak/webrequest-action@v1.2.3
         with:
           # Web request URL endpoint
-          url: "https://barefootrecipe.com/api/twitter"
+          url: "https://barefootrecipe.com/api/social"
           method: GET
