@@ -10,7 +10,6 @@
     "test": "jest --watch ",
     "test:ci": "env NODE_ENV=test jest --ci",
     "pretty": "prettier --write \"**/*.tsx\""
-
   },
   "dependencies": {
     "encoding": "^0.1.13",
@@ -26,6 +25,7 @@
     "react-infinite-scroll-component": "^6.1.0",
     "react-multi-carousel": "^2.8.2",
     "sass": "^1.54.0",
+    "snoowrap": "^1.23.0",
     "twitter-api-v2": "^1.13.0"
   },
   "devDependencies": {

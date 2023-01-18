@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from 'next'
 import TwitterApi from 'twitter-api-v2'
 import { TwitterApiTokens } from 'twitter-api-v2/dist/esm/types'
-import { getPosts } from '../../services'
+import { getPosts } from '../services'
 
 const tokens: TwitterApiTokens = {
   appKey: process.env.TWITTER_API_KEY as string,
