@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from 'next'
-import facebook from '../../helpers/facebook'
-import instagram from '../../helpers/instagram'
-import twitter from '../../helpers/twitter'
+import facebook from '../../lib/facebook'
+import instagram from '../../lib/instagram'
+import twitter from '../../lib/twitter'
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const facebookPost = await facebook()
