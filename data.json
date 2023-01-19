@@ -2,16 +2,19 @@
   {
     "imageURl": "https://media.graphassets.com/output=format:jpg/resize=height:800,fit:max/HizP5e2SB6lUx7hzirxA",
     "title": "Thai Chicken Curry",
-    "content": "A proper Thai chicken curry. The perfect balance of heat, sweetness, and tanginess that hits all the right spots #thaifood #curry #feedsmysoul"
+    "content": "A proper Thai chicken curry. The perfect balance of heat, sweetness, and tanginess that hits all the right spots", 
+    "tags": "#thaifood #curry #feedsmysoul"
   },
   {
     "imageURl": "https://media.graphassets.com/output=format:jpg/resize=height:800,fit:max/JY13wzeSsOxQ4LokeoUg",
     "title": "Stir Fried Seafood",
-    "content": "The most amazing Thai mixed seafood stir fry with green peppercorns and rice wine. From a side of the road type place. The wok-seared flavors are out of this world #seafood #thaifood #wok"
+    "content": "The most amazing Thai mixed seafood stir fry with green peppercorns and rice wine. From a side of the road type place. The wok-seared flavors are out of this world.", 
+    "tags": "#seafood #thaifood #wok"
   },
   {
     "imageURl": "https://media.graphassets.com/output=format:jpg/resize=height:800,fit:max/bg8U6ibBTKqxr1ztmk3k",
     "title": "Stir Fried Seafood",
-    "content": "Nothing like a night in with a homemade Chinese hot pot and a good movie. Life doesn't get much better! #chinesefood #hotpot #movienight"
+    "content": "Nothing like a night in with a homemade Chinese hot pot and a good movie. Life doesn't get much better!",
+    "tags": "#chinesefood #hotpot #movienight"
   }
 ]
