@@ -17,9 +17,12 @@ const rwClient = client.readWrite
 
 const twitter = async (mode: 'blog' | 'json') => {
   //get the total number of tweets
-  const result = await client.v2.get('users/1607016952588865543/tweets')
-  const totalTweets = result.data.length - 10
+  const result = await client.v2.userTimeline('1607016952588865543', {
+    max_results: 100,
+  })
 
+  const totalTweets = result.meta.result_count - 16
+  console.log(totalTweets)
   if (mode === 'blog') {
     //get the data
     const data = await getPosts()
@@ -36,7 +39,7 @@ const twitter = async (mode: 'blog' | 'json') => {
     const url = json[totalTweets].imageURl
     const hashTags = json[totalTweets].tags
 
-    // First, post all your image to Twitter
+    // //First, post all your image to Twitter
     const mediaId = await client.v1.uploadMedia('./public/seafood.jpg')
 
     const response = await rwClient.v2.tweetThread([

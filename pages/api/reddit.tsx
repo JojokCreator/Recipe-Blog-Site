@@ -15,8 +15,9 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const postNumber = await r
     .getUser(process.env.REDDIT_USER as string)
     .getSubmissions()
-  const post = postNumber.length - 14
+  const post = postNumber.length - 5
 
+  //FoodVideos
   r.getSubreddit('cookingvideos').submitLink({
     subredditName: 'cookingvideos',
     title: videos.items[post].snippet.title,
