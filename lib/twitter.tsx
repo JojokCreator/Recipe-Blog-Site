@@ -40,7 +40,9 @@ const twitter = async (mode: 'blog' | 'json') => {
     const hashTags = json[totalTweets].tags
 
     // //First, post all your image to Twitter
-    const mediaId = await client.v1.uploadMedia('./public/seafood.jpg')
+    const mediaId = await client.v1.uploadMedia(
+      `./public/${json[totalTweets].title}.jpg`
+    )
 
     const response = await rwClient.v2.tweetThread([
       { text: `${post}. #${hashTags}`, media: { media_ids: [mediaId] } },
