@@ -36,16 +36,16 @@ const twitter = async (mode: 'blog' | 'json') => {
     return `${data[totalTweets].node.slug} created successfully`
   } else {
     const post = json[totalTweets].title + ' - ' + json[totalTweets].content
-    const url = json[totalTweets].imageURl
+    const id = json[totalTweets].twitterId as string
     const hashTags = json[totalTweets].tags
 
     // //First, post all your image to Twitter
-    const mediaId = await client.v1.uploadMedia(
-      `https://barefootrecipe.com/${json[totalTweets].title}.jpg`
-    )
+    // const mediaId = await client.v1.uploadMedia(
+    //   `./public/${json[totalTweets].title}.jpg`
+    // )
 
     const response = await rwClient.v2.tweetThread([
-      { text: `${post}. #${hashTags}`, media: { media_ids: [mediaId] } },
+      { text: `${post}. #${hashTags}`, media: { media_ids: [id] } },
     ])
     console.log(response)
     return json[totalTweets].title + ' created successfully'
