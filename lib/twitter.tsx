@@ -41,7 +41,7 @@ const twitter = async (mode: 'blog' | 'json') => {
 
     // //First, post all your image to Twitter
     const mediaId = await client.v1.uploadMedia(
-      `${json[totalTweets].title}.jpg`
+      `https://barefootrecipe.com/${json[totalTweets].title}.jpg`
     )
 
     const response = await rwClient.v2.tweetThread([
