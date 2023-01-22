@@ -1,4 +1,4 @@
-  {
+{
   "postsConnection": {
     "edges": [
       {
@@ -14,7 +14,7 @@
           "createdAt": "2023-01-07T10:36:13.943034+00:00",
           "slug": "pork-adobo",
           "title": "Pork Adobo",
-          "excerpt": "Pork Adobo is a popular dish in the Philippines that is made by braising pork in a mixture of soy sauce, vinegar, and spices.",
+          "excerpt": "   Adobo is a popular dish in the Philippines that is made by braising pork in a mixture of soy sauce, vinegar, and spices.",
           "featuredImage": {
             "url": "https://media.graphassets.com/Kjc23uhUSla5Fy4Y0311"
           },
@@ -154,4 +154,3 @@
     ]
   }
 }
-

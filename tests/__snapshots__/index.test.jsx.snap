@@ -19,6 +19,24 @@ exports[`Home snapshot matches previous 1`] = `
       </div>
     </div>
     <div
+      class="flex p-4 w-"
+    >
+      <input
+        class="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-10 text-center"
+        name="search"
+        placeholder="Search Here..."
+        type="text"
+        value=""
+      />
+      <button
+        aria-label="Click to search the posts"
+        class="transition duration-500 ease hover:bg-indigo-900 inline-block bg-indigo-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer ml-2"
+        type="button"
+      >
+        Search
+      </button>
+    </div>
+    <div
       class="grid grid-cols-1 lg:grid-cols-12 gap-12"
     >
       <ul
@@ -99,7 +117,7 @@ exports[`Home snapshot matches previous 1`] = `
           <p
             class="text-center text-lg text-grey-700 font-normal px-4 lg:px-20 mb-8"
           >
-            Pork Adobo is a popular dish in the Philippines that is made by braising pork in a mixture of soy sauce, vinegar, and spices.
+               Adobo is a popular dish in the Philippines that is made by braising pork in a mixture of soy sauce, vinegar, and spices.
           </p>
           <div
             class="text-center"
@@ -691,7 +709,7 @@ exports[`PostCard snapshot matches previous 1`] = `
     <p
       class="text-center text-lg text-grey-700 font-normal px-4 lg:px-20 mb-8"
     >
-      Pork Adobo is a popular dish in the Philippines that is made by braising pork in a mixture of soy sauce, vinegar, and spices.
+         Adobo is a popular dish in the Philippines that is made by braising pork in a mixture of soy sauce, vinegar, and spices.
     </p>
     <div
       class="text-center"
