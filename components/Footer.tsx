@@ -4,16 +4,16 @@ import { FaYoutube, FaInstagram, FaFacebookF } from 'react-icons/fa/'
 
 const Footer = () => {
   return (
-    <div className="container mx-auto px-10 mb-8">
-      <div className="mt-2 border-t w-full flex justify-between border-blue-400 py-8 ">
+    <div className="w-screen mx-auto px-10 mb-8 bg-black/50">
+      <div className="mt-2 border-t w-screen flex justify-between py-8 ">
         <div className="md:float-left flex">
           <Link href="/">
             <span className="flex cursor-pointer font-bold text-4xl text-white">
-              Barefoot Chef Blog{' '}
+              Barefoot Recipe{' '}
             </span>
           </Link>
         </div>
-        <div className="flex text-4xl text-white ml-4">
+        <div className="flex text-4xl text-white mr-4">
           <Link
             href="https://www.youtube.com/channel/UCsPGY5C60Rj0-rEdZlR9HsQ"
             aria-label="Link to youtube channel"
@@ -39,13 +39,11 @@ const Footer = () => {
             </div>
           </Link>
         </div>
-        <div className="hidden md:float-left md:contents">
-          <Link href="https://barefootrecipe.com/privacy">
-            <span className="md:float-right mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">
-              Privacy Policy
-            </span>
-          </Link>
-        </div>
+        <Link href="https://barefootrecipe.com/privacy">
+          <span className="mt-2 mr-20 align-middle text-white font-semibold cursor-pointer">
+            Privacy Policy
+          </span>
+        </Link>
       </div>
     </div>
   )

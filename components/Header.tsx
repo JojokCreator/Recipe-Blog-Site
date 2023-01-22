@@ -10,13 +10,13 @@ interface Categories {
 
 const Header = ({ categories }: Categories) => {
   return (
-    <div className="container mx-auto px-10 mb-8">
+    <div className="w-screen mx-auto px-10 mb-8 bg-black/50">
       {/* <Link href={`/privacy`}>
         <p className="hover:cursor-pointer float-left text-sm p-2 font-semibold underline">
           Privacy Policy
         </p>
       </Link> */}
-      <div className="border-b w-full flex justify-between border-blue-400 py-8 ">
+      <div className="border-b w-full flex justify-between py-8">
         <div className="md:float-left flex">
           <Link href="/" aria-label="Link to home page">
             <span className="flex cursor-pointer font-bold text-4xl text-white">
