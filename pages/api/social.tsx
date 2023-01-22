@@ -10,11 +10,9 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const data = await get('data')
   const mode = await get('mode')
   const facebookPost = await facebook(mode, postNumber, data)
-  const instaPost = await instagram(mode, postNumber, data)
-  const tweet = await twitter(mode, postNumber, data)
+  //const instaPost = await instagram(mode, postNumber, data)
+  //const tweet = await twitter(mode, postNumber, data)
   await incrementPost(postNumber)
-  res
-    .status(200)
-    .json({ facebook: facebookPost, instagram: instaPost, twitter: tweet })
+  res.status(200).json({ facebook: facebookPost })
 }
 export default handler

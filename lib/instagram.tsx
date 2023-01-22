@@ -43,7 +43,7 @@ const instagram = async (
       method: 'POST',
     }
   )
-  console.log(result)
+  console.log(await response.json())
   return json[postNumber].title + ' was posted successfully'
 }
 
