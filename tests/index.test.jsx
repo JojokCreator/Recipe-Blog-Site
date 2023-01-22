@@ -60,7 +60,6 @@ describe('PostCard', () => {
 
       const heading = screen.getByText('No posts found')
       expect(heading).toBeInTheDocument()
-      screen.debug(heading)
     })
     it('shows one posts found if search is pork', async () => {
       const posts = await getPosts()
