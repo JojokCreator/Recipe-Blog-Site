@@ -1,6 +1,8 @@
 import { NextApiRequest, NextApiResponse } from 'next'
 import youtube from '../../lib/youtube'
 import snoowrap from 'snoowrap'
+import { get } from '@vercel/edge-config'
+import incrementPost from './postCount'
 
 const r = new snoowrap({
   userAgent: 'put your user-agent string here',
@@ -12,21 +14,20 @@ const r = new snoowrap({
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const videos = await youtube()
-  const postNumber = await r
-    .getUser(process.env.REDDIT_USER as string)
-    .getSubmissions()
-  const post = postNumber.length - 5
+  const postNumber = parseInt((await get('reddit_number')) as string)
 
   //FoodVideos
-  r.getSubreddit('cookingvideos').submitLink({
-    subredditName: 'cookingvideos',
-    title: videos.items[post].snippet.title,
-    url: `https://www.youtube.com/watch?v=${videos.items[post].snippet.resourceId.videoId}`,
-    sendReplies: true,
-  })
+  // r.getSubreddit('cookingvideos').submitLink({
+  //   subredditName: 'cookingvideos',
+  //   title: videos.items[postNumber].snippet.title,
+  //   url: `https://www.youtube.com/watch?v=${videos.items[postNumber].snippet.resourceId.videoId}`,
+  //   sendReplies: true,
+  // })
+
+  await incrementPost(postNumber, 'reddit_number')
 
   res
     .status(200)
-    .json(videos.items[post].snippet.title + ' posted successfully')
+    .json(videos.items[postNumber].snippet.title + ' posted successfully')
 }
 export default handler

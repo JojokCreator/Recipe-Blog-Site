@@ -2,7 +2,7 @@ import { get } from '@vercel/edge-config'
 
 export const config = { matcher: '/welcome' }
 
-const incrementPost = async (post: number) => {
+const incrementPost = async (post: number, keyname: string) => {
   try {
     const updateEdgeConfig = await fetch(
       'https://api.vercel.com/v1/edge-config/ecfg_hafktjch0nmhdyc0buwhnfsueq8r/items',
@@ -16,7 +16,7 @@ const incrementPost = async (post: number) => {
           items: [
             {
               operation: 'update',
-              key: 'post_number',
+              key: keyname,
               value: post + 1,
             },
           ],
