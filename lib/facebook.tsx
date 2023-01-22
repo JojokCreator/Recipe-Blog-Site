@@ -1,25 +1,17 @@
 import { getPosts } from '../services'
-import json from '../data.json'
+import { json } from '../types'
 
-const facebook = async (mode: 'blog' | 'json') => {
-  const countPosts = async () => {
-    const response = await fetch(
-      `https://graph.facebook.com/v15.0/108454552132944/feed?access_token=${process.env.FACEBOOK_ACCESS_TOKEN}`
-    )
-
-    const data = await response.json()
-    let postNumber = data.data.length - 24
-    return postNumber
-  }
-  const postNumber = await countPosts()
-
-  const data = await getPosts()
+const facebook = async (
+  mode: 'blog' | 'json',
+  postNumber: number,
+  json: json[]
+) => {
   let post = ''
   let url = ''
 
   if (mode === 'blog') {
     //used to post a new post
-    console.log(postNumber)
+    const data = await getPosts()
     post = data[data.length - 1].node.excerpt
     url = `https://barefootrecipe.com/post/${data[postNumber].node.slug}`
   } else {

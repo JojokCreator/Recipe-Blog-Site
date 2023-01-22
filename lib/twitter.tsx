@@ -1,8 +1,7 @@
-import { NextApiRequest, NextApiResponse } from 'next'
 import TwitterApi from 'twitter-api-v2'
 import { TwitterApiTokens } from 'twitter-api-v2/dist/esm/types'
 import { getPosts } from '../services'
-import json from '../data.json'
+import { json } from '../types'
 
 const tokens: TwitterApiTokens = {
   appKey: process.env.TWITTER_API_KEY as string,
@@ -15,40 +14,37 @@ const client = new TwitterApi(tokens)
 
 const rwClient = client.readWrite
 
-const twitter = async (mode: 'blog' | 'json') => {
-  //get the total number of tweets
-  const result = await client.v2.userTimeline('1607016952588865543', {
-    max_results: 100,
-  })
-
-  const totalTweets = result.meta.result_count - 16
-  console.log(totalTweets)
+const twitter = async (
+  mode: 'blog' | 'json',
+  postNumber: number,
+  json: json[]
+) => {
   if (mode === 'blog') {
     //get the data
     const data = await getPosts()
 
-    const post = data[totalTweets].node.excerpt.split('.')[0]
-    const url = `https://barefootrecipe.com/post/${data[totalTweets].node.slug}`
-    const hashTags = data[totalTweets].node.slug.split('-').join(' #')
+    const post = data[postNumber].node.excerpt.split('.')[0]
+    const url = `https://barefootrecipe.com/post/${data[postNumber].node.slug}`
+    const hashTags = data[postNumber].node.slug.split('-').join(' #')
 
     await rwClient.v2.tweet(`${post}. #${hashTags} ${url}`)
 
-    return `${data[totalTweets].node.slug} created successfully`
+    return `${data[postNumber].node.slug} created successfully`
   } else {
-    const post = json[totalTweets].title + ' - ' + json[totalTweets].content
-    const id = json[totalTweets].twitterId as string
-    const hashTags = json[totalTweets].tags
+    const post = json[postNumber].title + ' - ' + json[postNumber].content
+    const id = json[postNumber].twitterId
+    const hashTags = json[postNumber].tags
 
     // //First, post all your image to Twitter
     // const mediaId = await client.v1.uploadMedia(
-    //   `./public/${json[totalTweets].title}.jpg`
+    //   `./public/${json[postNumber].title}.jpg`
     // )
 
     const response = await rwClient.v2.tweetThread([
       { text: `${post}. #${hashTags}`, media: { media_ids: [id] } },
     ])
     console.log(response)
-    return json[totalTweets].title + ' created successfully'
+    return json[postNumber].title + ' created successfully'
   }
 }
 

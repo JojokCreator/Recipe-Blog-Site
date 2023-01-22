@@ -1,16 +1,20 @@
 export type post = {
-    node: {
-      title: string
-      excerpt: string
-      featuredImage: { url: string }
-      slug: string
-      createdAt: string
-      author: { name: string; photo: { url: string }; bio: string }
-      categories: { name: string; slug: string }[]
-      content: { raw: { children: {
-        url: any; type: string; children: any 
-}[] } }
+  node: {
+    title: string
+    excerpt: string
+    featuredImage: { url: string }
+    slug: string
+    createdAt: string
+    author: { name: string; photo: { url: string }; bio: string }
+    categories: { name: string; slug: string }[]
+    content: {
+      raw: {
+        children: {
+          url: any; type: string; children: any
+        }[]
+      }
     }
+  }
 }
 
 export type category = {
@@ -19,12 +23,12 @@ export type category = {
 }
 
 export type Params = {
-	params: {
-		slug: string
-	}
+  params: {
+    slug: string
+  }
 }
-  export type Slug = {
-	slug: string
+export type Slug = {
+  slug: string
 }
 
 export type blog = {
@@ -35,4 +39,12 @@ export type blog = {
     createdAt: string
     content: { raw: { children: { type: string; children: any; url: string }[] } }
   }
+}
+
+export type json = {
+  imageURl: string
+  title: string
+  content: string
+  tags: string
+  twitterId: string
 }
