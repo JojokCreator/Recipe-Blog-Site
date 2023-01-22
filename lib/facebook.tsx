@@ -12,7 +12,7 @@ const facebook = async (
   if (mode === 'blog') {
     //used to post a new post
     const data = await getPosts()
-    post = data[data.length - 1].node.excerpt
+    post = data[postNumber].node.excerpt
     url = `https://barefootrecipe.com/post/${data[postNumber].node.slug}`
   } else {
     // used to post from json

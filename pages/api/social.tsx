@@ -15,6 +15,6 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   await incrementPost(postNumber)
   res
     .status(200)
-    .json({ facebook: facebookPost, instagram: instaPost, twitter: tweet })
+    .json({ facebook: facebookPost, twitter: tweet, instagram: instaPost })
 }
 export default handler
