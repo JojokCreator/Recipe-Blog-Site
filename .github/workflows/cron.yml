@@ -17,5 +17,5 @@ jobs:
         uses: Satak/webrequest-action@v1.2.3
         with:
           # Web request URL endpoint
-          url: "https://barefootrecipe.com/api/social"
+          url: "https://barefootrecipe.com/api/reddit"
           method: GET
