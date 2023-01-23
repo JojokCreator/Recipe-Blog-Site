@@ -19,10 +19,12 @@ const twitter = async (
   postNumber: number,
   json: json[]
 ) => {
+  let title = ''
+
   if (mode === 'blog') {
     //get the data
     const data = await getPosts()
-
+    title = data[postNumber].title
     const post = data[postNumber].node.excerpt.split('.')[0]
     const url = `https://barefootrecipe.com/post/${data[postNumber].node.slug}`
     const hashTags = data[postNumber].node.slug.split('-').join(' #')
@@ -31,7 +33,8 @@ const twitter = async (
 
     return `${data[postNumber].node.slug} created successfully`
   } else {
-    const post = json[postNumber].title + ' - ' + json[postNumber].content
+    title = json[postNumber].title
+    const post = title + ' - ' + json[postNumber].content
     const id = json[postNumber].twitterId
     const hashTags = json[postNumber].tags
 
@@ -44,7 +47,7 @@ const twitter = async (
       { text: `${post}. #${hashTags}`, media: { media_ids: [id] } },
     ])
     console.log(response)
-    return json[postNumber].title + ' created successfully'
+    return title + ' created successfully'
   }
 }
 
