@@ -8,20 +8,19 @@ const facebook = async (
 ) => {
   let post = ''
   let url = ''
+  let title = ''
 
   if (mode === 'blog') {
     //used to post a new post
     const data = await getPosts()
+    title = data[postNumber].node.title
     post = data[postNumber].node.excerpt
     url = `https://barefootrecipe.com/post/${data[postNumber].node.slug}`
   } else {
     // used to post from json
+    title = json[postNumber].title
     post =
-      json[postNumber].title +
-      ' - ' +
-      json[postNumber].content +
-      ' ' +
-      json[postNumber].tags
+      title + ' - ' + json[postNumber].content + ' ' + json[postNumber].tags
     url = json[postNumber].imageURl
   }
 
@@ -38,7 +37,7 @@ const facebook = async (
     }
   )
   console.log(await response.json())
-  return json[postNumber].title + ' was posted successfully'
+  return title + ' was posted successfully'
 }
 
 export default facebook

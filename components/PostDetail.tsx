@@ -61,6 +61,7 @@ const PostDetail = ({ post }: Props) => {
       case 'iframe':
         return (
           <iframe
+            className="w-[100%] h-[100%] aspect-video"
             key={index}
             src={obj.url}
             width={obj.width}

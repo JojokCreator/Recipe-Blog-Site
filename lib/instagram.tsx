@@ -10,13 +10,16 @@ const instagram = async (
 ) => {
   let text = ''
   let imageUrl = ''
+  let title = ''
 
   if (mode === 'blog') {
     const data = await getPosts()
-    text = `${data[postNumber].node.title} - https://barefootrecipe.com/post/${data[postNumber].node.slug}`
+    title = data[postNumber].node.title
+    text = `${title} - https://barefootrecipe.com/post/${data[postNumber].node.slug}`
     imageUrl = data[postNumber].node.featuredImage.url
   } else {
-    text = json[postNumber].title + ' - ' + json[postNumber].content
+    title = json[postNumber].title
+    text = title + ' - ' + json[postNumber].content
     imageUrl = json[postNumber].imageURl
   }
   const response = await fetch(
@@ -44,7 +47,7 @@ const instagram = async (
     }
   )
   console.log(await result.json())
-  return json[postNumber].title + ' was posted successfully'
+  return title + ' was posted successfully'
 }
 
 export default instagram
