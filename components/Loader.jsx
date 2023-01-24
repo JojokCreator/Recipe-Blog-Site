@@ -1,5 +1,5 @@
 const Loader = () => (
-  <div className="text-center h-full">
+  <div className="text-center h-screen">
     <button
       aria-label="shows the loading spinner"
       type="button"

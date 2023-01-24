@@ -2,10 +2,10 @@ import Link from 'next/link'
 
 export default function Privacy() {
   return (
-    <div className="flex items-center justify-center h-80 flex-col mt-80">
-      <div className=" bg-black bg-opacity-50 rounded-lg">
+    <div className="flex items-center justify-center flex-col">
+      <div className=" bg-black bg-opacity-80 rounded-lg">
         <h1 className="font-bold text-4xl text-white p-4 ">Privacy Policy</h1>
-        <p className="font-bold text-xl text-white p-4">
+        <p className="text-xl text-white p-4">
           <p>
             At Barefoot Chef, we are committed to protecting your privacy. This
             privacy policy explains how we collect, use, and share your personal
@@ -60,10 +60,11 @@ export default function Privacy() {
             ask@barefootrecipe.com.
           </a>
         </p>
-        <Link href="/">
-          <a className="font-bold text-2xl text-white hover:opacity-80 p-4">
-            Click Here to go back to the home page
-          </a>
+        <Link
+          href="/"
+          className="font-bold text-2xl text-white hover:opacity-80 p-4"
+        >
+          Click Here to go back to the home page
         </Link>
       </div>
     </div>
