@@ -6,7 +6,7 @@ const Travels = async () => {
   const blogs: blog[] = await getBlogs()
   return (
     <div className="flex items-center justify-center h-80 flex-col mb-60">
-      <div className=" bg-black p-6 bg-opacity-50 rounded-lg flex flex-col">
+      <div className=" bg-black p-6 bg-opacity-70 rounded-lg flex flex-col">
         <h1 className="font-bold text-4xl text-white p-4">Travels</h1>
         {blogs.map((blog, index) => (
           <Link
