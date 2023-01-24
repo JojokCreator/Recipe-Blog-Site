@@ -6,7 +6,7 @@ describe('Home', () => {
   it('renders a heading', async () => {
     const categories = await getCategories()
     render(<Header categories={categories} />)
-    const heading = screen.getByText('Barefoot Chef Blog')
+    const heading = screen.getByText('Barefoot Chef')
     expect(heading).toBeInTheDocument()
   })
 
