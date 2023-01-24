@@ -32,7 +32,7 @@ const Home = ({ posts }: HomeProps) => {
           type="text"
           value={input}
           onChange={onInputChange}
-          className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-10 text-center mb-4"
+          className="py-2 px-4 w-full ring-black rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-10 text-center mb-4"
           placeholder="Search Here..."
           name="search"
         />

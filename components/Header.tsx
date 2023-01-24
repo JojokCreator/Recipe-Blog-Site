@@ -10,21 +10,21 @@ interface Categories {
 
 const Header = ({ categories }: Categories) => {
   return (
-    <div className="w-screen mx-auto px-10 mb-8 bg-black/50">
+    <div className="w-screen mb-4 px-0 md:px-4 bg-black/50 border-b">
       {/* <Link href={`/privacy`}>
         <p className="hover:cursor-pointer float-left text-sm p-2 font-semibold underline">
           Privacy Policy
         </p>
       </Link> */}
-      <div className="border-b w-full flex justify-between py-8">
-        <div className="md:float-left flex">
-          <Link href="/" aria-label="Link to home page">
-            <span className="flex cursor-pointer font-bold text-4xl text-white">
-              Barefoot Chef Blog{' '}
+      <div className=" flex justify-between p-4">
+        <div className="flex px-2 md:px-8">
+          <Link className="self-center" href="/" aria-label="Link to home page">
+            <span className="flex cursor-pointer font-bold text-2xl md:text-4xl text-white">
+              Barefoot Chef{' '}
             </span>
           </Link>
         </div>
-        <div className="flex text-4xl text-white ml-4">
+        <div className="flex text-4xl text-white ml-2">
           <Link
             href="https://www.youtube.com/channel/UCsPGY5C60Rj0-rEdZlR9HsQ"
             aria-label="Link to youtube channel"
@@ -50,20 +50,24 @@ const Header = ({ categories }: Categories) => {
             </div>
           </Link>
         </div>
-        <div className="hidden md:float-left md:contents">
+        <div className="hidden lg:contents">
           {categories.map((category) => (
-            <Link key={category.slug} href={`/category/${category.slug}`}>
-              <span className="md:float-right mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">
+            <Link
+              className="self-center"
+              key={category.slug}
+              href={`/category/${category.slug}`}
+            >
+              <span className="hover:opacity-80 text-white font-semibold cursor-pointer">
                 {category.name}
               </span>
             </Link>
           ))}
-          <Link href={`/travels`}>
-            <span className="md:float-right mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">
-              Travels
-            </span>
-          </Link>
         </div>
+        <Link className="self-center" href={`/travels`}>
+          <span className="hover:opacity-80 text-white font-semibold cursor-pointer mr-4">
+            Travels
+          </span>
+        </Link>
       </div>
     </div>
   )
