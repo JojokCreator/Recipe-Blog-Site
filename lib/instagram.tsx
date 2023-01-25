@@ -34,6 +34,10 @@ const instagram = async (
     }
   )
   const { id } = await response.json()
+  console.log(response)
+  // if (response.status != 200) {
+  //   return response
+  // }
 
   const result = await fetch(
     `https://graph.facebook.com/v15.0/17841457516696875/media_publish?creation_id=${id}&access_token=${process.env.FACEBOOK_ACCESS_TOKEN}`,
@@ -46,7 +50,10 @@ const instagram = async (
       method: 'POST',
     }
   )
-  console.log(await result.json())
+  const data = await result.json()
+  if (data.status != 200) {
+    return data
+  }
   return title + ' was posted successfully'
 }
 

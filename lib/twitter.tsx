@@ -46,7 +46,9 @@ const twitter = async (
     const response = await rwClient.v2.tweetThread([
       { text: `${post}. #${hashTags}`, media: { media_ids: [id] } },
     ])
-    console.log(response)
+    if (response[0].errors) {
+      return response
+    }
     return title + ' created successfully'
   }
 }
