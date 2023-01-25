@@ -2,6 +2,7 @@ import { Footer, Header } from '../components'
 import '../styles/globals.scss'
 import { getCategories } from '../services'
 import Script from 'next/script'
+import { AnalyticsWrapper } from '../components/analytics'
 
 export default async function RootLayout({
   children,
@@ -37,6 +38,7 @@ export default async function RootLayout({
       <body>
         <Header categories={categories} />
         {children}
+        <AnalyticsWrapper />
         <Footer />
       </body>
     </html>

@@ -11,9 +11,10 @@
     "test:ci": "env NODE_ENV=test jest --ci",
     "pretty": "prettier --write \"**/*.tsx\"",
     "prepare": "husky install",
-    "pre-commit": "npm run lint"
+    "pre-commit": "npm run lint && npm test"
   },
   "dependencies": {
+    "@vercel/analytics": "^0.1.8",
     "@vercel/edge-config": "^0.1.1",
     "encoding": "^0.1.13",
     "graphql": "^16.5.0",
