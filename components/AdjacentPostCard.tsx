@@ -1,7 +1,7 @@
 import React from 'react'
 import moment from 'moment'
 import Link from 'next/link'
-import Image from 'next/legacy/image'
+import Image from 'next/image'
 
 type AdjacentPostCardProps = {
   post: {
@@ -22,7 +22,7 @@ const AdjacentPostCard = ({ post, position }: AdjacentPostCardProps) => (
     <div className="absolute rounded-lg bg-center bg-no-repeat bg-cover shadow-md inline-block w-full h-72">
       <Image
         src={post.featuredImage.url}
-        layout="fill"
+        fill
         objectFit="cover"
         alt="featured image"
       />

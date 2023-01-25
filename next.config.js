@@ -15,7 +15,8 @@ module.exports = async () => {
       appDir: true,
     },
     images: {
-      domains: ["media.graphassets.com"],
+      domains: ['media.graphassets.com'],
+      formats: ['image/avif', 'image/webp'],
     },
     reactStrictMode: true,
   }

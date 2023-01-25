@@ -1,5 +1,5 @@
 import moment from 'moment'
-import Image from 'next/legacy/image'
+import Image from 'next/image'
 import Link from 'next/link'
 
 type FeaturedPostCardProps = {
@@ -22,7 +22,7 @@ const FeaturedPostCard = ({ post }: FeaturedPostCardProps) => (
         className="rounded-lg"
         src={post.featuredImage.url}
         alt={post.title}
-        layout="fill"
+        fill
         objectFit="cover"
       />
     </div>
@@ -36,7 +36,6 @@ const FeaturedPostCard = ({ post }: FeaturedPostCardProps) => (
       </p>
       <div className="flex items-center absolute bottom-5 w-full justify-center">
         <Image
-          unoptimized
           alt={post.author.name}
           height="30"
           width="30"
