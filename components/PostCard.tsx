@@ -1,6 +1,6 @@
 import moment from 'moment'
 import Link from 'next/link'
-import Image from 'next/legacy/image'
+import Image from 'next/image'
 
 interface Props {
   post: {
@@ -20,7 +20,7 @@ const PostCard = ({ post }: Props) => {
         <Image
           src={post.featuredImage.url}
           alt={post.title}
-          layout="fill"
+          fill
           className="object-top absolute h-80 w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg"
         />
       </div>
