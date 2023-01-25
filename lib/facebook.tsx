@@ -36,7 +36,10 @@ const facebook = async (
       method: 'POST',
     }
   )
-  console.log(await response.json())
+  const data = await response.json()
+  if (data.status != 200) {
+    return data
+  }
   return title + ' was posted successfully'
 }
 

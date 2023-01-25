@@ -14,14 +14,11 @@ const Footer = () => {
         <div className="flex px-2 md:px-8">
           <Link className="self-center" href="/" aria-label="Link to home page">
             <span className="flex cursor-pointer font-bold text-2xl md:text-4xl text-white">
-              Barefoot Chef{' '}
+              Barefoot Chef &copy;{' '}
             </span>
           </Link>
         </div>
-        <span className="self-center flex cursor-pointer font-bold text-white">
-          Copyright &copy; 2023{' '}
-        </span>
-        <div className="flex text-4xl text-white ml-2">
+        <div className="flex text-4xl text-white md:ml-2">
           <Link
             href="https://www.youtube.com/channel/UCsPGY5C60Rj0-rEdZlR9HsQ"
             aria-label="Link to youtube channel"
