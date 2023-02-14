@@ -7,11 +7,12 @@
     "sitemap": "next-sitemap",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest --watch ",
+    "test": "jest --watch",
+    "pre-commit-test": "jest",
     "test:ci": "env NODE_ENV=test jest --ci",
     "pretty": "prettier --write \"**/*.tsx\"",
     "prepare": "husky install",
-    "pre-commit": "npm run lint && npm test"
+    "pre-commit": "npm run lint && npm run pre-commit-test"
   },
   "dependencies": {
     "@vercel/analytics": "^0.1.8",
