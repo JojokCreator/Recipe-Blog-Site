@@ -29,8 +29,10 @@
     "**/*.ts",
     "**/*.tsx",
     "pages/post/[slug].tsx",
-    ".next/types/**/*.ts"
-, "components/Loader.jsx"  ],
+    ".next/types/**/*.ts",
+    "components/Loader.jsx",
+    "C:\\Users\\joeyk\\Desktop\\projects\\Recipe-Blog-Site\\.next/types/**/*.ts"
+  ],
   "exclude": [
     "node_modules"
   ]

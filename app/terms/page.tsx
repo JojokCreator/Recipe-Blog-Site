@@ -21,12 +21,12 @@ export default function Terms() {
           </p>
           <h2 className="text-2xl font-bold mb-4">Disclaimer</h2>
           <p className="mb-4 text-xl">
-            The Barefoot Chef website and its content are provided on an "as is"
-            basis without any warranties, express or implied. Barefoot Chef does
-            not warrant that the website will be error-free or uninterrupted, or
-            that the content on the website will be accurate or complete.
-            Barefoot Chef is not liable for any damages arising from the use of
-            the website.
+            The Barefoot Chef website and its content are provided on an
+            &quot;as is&quot; basis without any warranties, express or implied.
+            Barefoot Chef does not warrant that the website will be error-free
+            or uninterrupted, or that the content on the website will be
+            accurate or complete. Barefoot Chef is not liable for any damages
+            arising from the use of the website.
           </p>
           <h2 className="text-2xl font-bold mb-4">
             Changes to Terms and Conditions
