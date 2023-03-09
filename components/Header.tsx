@@ -1,5 +1,10 @@
 import Link from 'next/link'
-import { FaYoutube, FaInstagram, FaFacebookF } from 'react-icons/fa/'
+import {
+  FaYoutube,
+  FaInstagram,
+  FaFacebookF,
+  FaEnvelope,
+} from 'react-icons/fa/'
 
 interface Categories {
   categories: {
@@ -49,6 +54,11 @@ const Header = ({ categories }: Categories) => {
               <FaFacebookF />
             </div>
           </Link>
+          <Link href="/contact" aria-label="Contact me link">
+            <div className="hover:cursor-pointer hover:opacity-80 ml-2">
+              <FaEnvelope />
+            </div>
+          </Link>
         </div>
         <div className="hidden lg:contents">
           {categories.map((category) => (
@@ -63,7 +73,7 @@ const Header = ({ categories }: Categories) => {
             </Link>
           ))}
         </div>
-        <Link className="self-center" href={`/travels`}>
+        <Link className="hidden md:flex self-center" href={`/travels`}>
           <span className="hover:opacity-80 text-white font-semibold cursor-pointer mr-4">
             Travels
           </span>

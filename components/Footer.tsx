@@ -1,6 +1,11 @@
 'use client'
 import Link from 'next/link'
-import { FaYoutube, FaInstagram, FaFacebookF } from 'react-icons/fa/'
+import {
+  FaYoutube,
+  FaInstagram,
+  FaFacebookF,
+  FaEnvelope,
+} from 'react-icons/fa/'
 
 const Footer = () => {
   return (
@@ -10,15 +15,15 @@ const Footer = () => {
           Privacy Policy
         </p>
       </Link> */}
-      <div className=" flex justify-between p-4">
-        <div className="flex px-2 md:px-8">
+      <div className="flex justify-between p-4">
+        <div className="hidden md:flex px-2 md:px-8">
           <Link className="self-center" href="/" aria-label="Link to home page">
             <span className="flex cursor-pointer font-bold text-2xl md:text-4xl text-white">
               Barefoot Chef &copy;{' '}
             </span>
           </Link>
         </div>
-        <div className="flex text-4xl text-white md:ml-2">
+        <div className="flex text-4xl text-white hidden md:flex md:ml-2  ">
           <Link
             href="https://www.youtube.com/channel/UCsPGY5C60Rj0-rEdZlR9HsQ"
             aria-label="Link to youtube channel"
@@ -43,10 +48,25 @@ const Footer = () => {
               <FaFacebookF />
             </div>
           </Link>
+          <Link href="/contact" aria-label="Contact me link">
+            <div className="hover:cursor-pointer hover:opacity-80 ml-2">
+              <FaEnvelope />
+            </div>
+          </Link>
         </div>
         <Link className="self-center" href={`/privacy`}>
           <span className="hover:opacity-80 text-white font-semibold cursor-pointer mr-1 md:mr-4">
             Privacy Policy
+          </span>
+        </Link>
+        <Link className="self-center" href={`/about`}>
+          <span className="hover:opacity-80 text-white font-semibold cursor-pointer mr-1 md:mr-4">
+            About
+          </span>
+        </Link>
+        <Link className="self-center" href={`/terms`}>
+          <span className="hover:opacity-80 text-white font-semibold cursor-pointer mr-1 md:mr-4">
+            Terms & Conditions
           </span>
         </Link>
       </div>

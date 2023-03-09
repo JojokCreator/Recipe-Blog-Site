@@ -19,11 +19,14 @@ const FeaturedPostCard = ({ post }: FeaturedPostCardProps) => (
   <div className="relative h-72">
     <div className="absolute rounded-lg bg-center bg-no-repeat bg-cover shadow-md inline-block w-full h-72">
       <Image
-        className="rounded-lg"
+        className="rounded-lg object-cover"
         src={post.featuredImage.url}
         alt={post.title}
         fill
-        objectFit="cover"
+        sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+        // objectFit="cover"
       />
     </div>
     <div className="absolute rounded-lg bg-center bg-gradient-to-b opacity-50 from-gray-700 to-black w-full h-72" />

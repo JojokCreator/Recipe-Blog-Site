@@ -21,6 +21,10 @@ const PostCard = ({ post }: Props) => {
           src={post.featuredImage.url}
           alt={post.title}
           fill
+          // style={{ height: 'auto', width: 'auto' }}
+          sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
           className="object-top absolute h-80 w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg"
         />
       </div>
