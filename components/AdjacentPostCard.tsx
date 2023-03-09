@@ -23,6 +23,9 @@ const AdjacentPostCard = ({ post, position }: AdjacentPostCardProps) => (
       <Image
         src={post.featuredImage.url}
         fill
+        sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
         objectFit="cover"
         alt="featured image"
       />

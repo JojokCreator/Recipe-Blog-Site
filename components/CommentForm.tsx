@@ -67,7 +67,7 @@ const CommentsForm = ({ slug }: CommentsFormProps) => {
     // }
 
     submitComment(commentObj).then((res) => {
-      if (res.createComment) {
+      if (res.result.createComment) {
         if (!storeData) {
           formData.name = ''
           formData.email = ''

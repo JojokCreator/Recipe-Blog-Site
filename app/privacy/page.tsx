@@ -62,7 +62,7 @@ export default function Privacy() {
         </p>
         <Link
           href="/"
-          className="font-bold text-2xl text-white hover:opacity-80 p-4"
+          className="font-bold text-xl md:text-2xl text-white hover:opacity-80 p-4"
         >
           Click Here to go back to the home page
         </Link>
