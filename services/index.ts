@@ -33,7 +33,7 @@ export const getPosts = async () => {
     }
   `
 
-  const result = await request(graphqlAPI, query)
+  const result: any = await request(graphqlAPI, query)
   return result.postsConnection.edges
 }
 
@@ -50,7 +50,7 @@ export const getRecentPosts = async () => {
       }
     }
   `
-  const result = await request(graphqlAPI, query)
+  const result: any = await request(graphqlAPI, query)
 
   return result.posts
 }
@@ -74,7 +74,7 @@ export const getSimilarPosts = async (categories: string[], slug: string) => {
       }
     }
   `
-  const result = await request(graphqlAPI, query, { categories, slug })
+  const result: any = await request(graphqlAPI, query, { categories, slug })
 
   return result.posts
 }
@@ -108,7 +108,7 @@ export const getPostsDetails = async (slug: string | undefined) => {
     }
   `
 
-  const result = await request(graphqlAPI, query, { slug })
+  const result: any = await request(graphqlAPI, query, { slug })
   return result.post
 }
 
@@ -121,13 +121,13 @@ export const getCategories = async () => {
       }
     }
   `
-  const result = await request(graphqlAPI, query)
+  const result: any = await request(graphqlAPI, query)
 
   return result.categories
 }
 
 export const submitComment = async (obj: any) => {
-  const result = await fetch('/api/comments', {
+  const result: any = await fetch('/api/comments', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -147,7 +147,7 @@ export const getComments = async (slug: string) => {
       }
     }
   `
-  const result = await request(graphqlAPI, query, { slug })
+  const result: any = await request(graphqlAPI, query, { slug })
 
   return result.comments
 }
@@ -171,7 +171,7 @@ export const getFeaturedPosts = async () => {
       }
     }
   `
-  const result = await request(graphqlAPI, query)
+  const result: any = await request(graphqlAPI, query)
 
   return result.posts
 }
@@ -206,7 +206,7 @@ export const getAdjacentPosts = async (createdAt: string, slug: string) => {
     }
   `
 
-  const result = await request(graphqlAPI, query, { slug, createdAt })
+  const result: any = await request(graphqlAPI, query, { slug, createdAt })
 
   return { next: result.next[0], previous: result.previous[0] }
 }
@@ -243,7 +243,7 @@ export const getCategoryPost = async (slug: string) => {
     }
   `
 
-  const result = await request(graphqlAPI, query, { slug })
+  const result: any = await request(graphqlAPI, query, { slug })
 
   return result.postsConnection.edges
 }
@@ -264,7 +264,7 @@ export const getBlogs = async () => {
     }
   `
 
-  const result = await request(graphqlAPI, query)
+  const result: any = await request(graphqlAPI, query)
 
   return result.blogsConnection.edges
 }
@@ -284,7 +284,7 @@ export const getBlogsDetails = async (slug: string | undefined) => {
     }
   `
 
-  const result = await request(graphqlAPI, query, { slug })
+  const result: any = await request(graphqlAPI, query, { slug })
 
   return result.blog
 }
