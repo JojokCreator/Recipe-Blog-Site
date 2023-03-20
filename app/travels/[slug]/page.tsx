@@ -1,16 +1,61 @@
 import { Categories, Loader } from '../../../components'
 import { getBlogs, getBlogsDetails } from '../../../services'
-import Head from 'next/head'
 import BlogDetail from '../../../components/BlogDetail'
+import { Params, blog } from '../../../types'
 
-type Params = {
-  params: {
-    slug: string
+// type Params = {
+//   params: {
+//     slug: string
+//   }
+// }
+
+export async function generateMetadata({ params }: Params) {
+  const blog: blog['node'] = await getBlogsDetails(params.slug)
+  return {
+    alternates: { canonical: `https://barefootrecipe.com/${blog.slug}` },
+    title: blog.title,
+    description: blog.excerpt,
+    // twitter meta tags
+    twitter: {
+      card: 'summary_large_image',
+      images: {
+        url: 'https://barefootrecipe.com/blog.jpg',
+        alt: blog.title,
+      },
+    },
+    //  open graph tags
+    openGraph: {
+      locale: 'en_US',
+      url: `https://barefootrecipe.com/${blog.slug}`,
+      title: blog.title,
+      description: blog.excerpt,
+      images: [
+        {
+          url: 'https://barefootrecipe.com/blog.jpg',
+          alt: blog.title,
+        },
+      ],
+      type: 'article',
+    },
   }
 }
 
 const BlogDetails = async ({ params }: Params) => {
   const blog = await getBlogsDetails(params.slug)
+
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: blog.title,
+    description: blog.excerpt,
+    author: [
+      {
+        '@type': 'Person',
+        name: 'Barefoot Chef',
+      },
+    ],
+    datePublished: blog.createdAt,
+  }
 
   if (!blog) {
     return <Loader />
@@ -18,6 +63,14 @@ const BlogDetails = async ({ params }: Params) => {
 
   return (
     <>
+      <section>
+        {/* Add JSON-LD to your page */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+        {/* ... */}
+      </section>
       <div className="container mx-auto px-10 mb-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="col-span-1 lg:col-span-8">

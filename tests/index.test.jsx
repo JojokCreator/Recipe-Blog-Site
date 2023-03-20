@@ -5,6 +5,7 @@ import { PostCard, Home, Header } from '../components'
 describe('Home', () => {
   it('renders a heading', async () => {
     const categories = await getCategories()
+    console.log(categories)
     render(<Header categories={categories} />)
     const heading = screen.getByText('Barefoot Chef')
     expect(heading).toBeInTheDocument()
