@@ -18,29 +18,37 @@ interface Props {
 const PostDetail = ({ post }: Props) => {
   const getContentFragment = (index: any, text: any, obj: any, type: any) => {
     let modifiedText = text
-
     if (obj) {
       if (obj.bold) {
         modifiedText = <b key={index}>{text}</b>
       }
-
+      if (obj.href) {
+        modifiedText = <a href={obj.href} key={index}>{obj.children[0].text}</a>
+      }
       if (obj.italic) {
         modifiedText = <em key={index}>{text}</em>
       }
-
       if (obj.underline) {
         modifiedText = <u key={index}>{text}</u>
       }
     }
 
     switch (type) {
-      case 'heading-three':
+      case 'heading-two':
         return (
-          <h3 key={index} className="text-xl font-semibold mb-4">
+          <h2 key={index} className="text-xl font-semibold mb-4">
             {modifiedText.map((item: any, i: number) => (
               <React.Fragment key={i}>{item}</React.Fragment>
             ))}
-          </h3>
+          </h2>
+        )
+        case 'heading-two':
+        return (
+          <h2 key={index} className="text-md font-semibold mb-4">
+            {modifiedText.map((item: any, i: number) => (
+              <React.Fragment key={i}>{item}</React.Fragment>
+            ))}
+          </h2>
         )
       case 'paragraph':
         return (
@@ -50,13 +58,13 @@ const PostDetail = ({ post }: Props) => {
             ))}
           </p>
         )
-      case 'heading-four':
+      case 'heading-three':
         return (
-          <h4 key={index} className="text-md font-semibold mb-4">
+          <h3 key={index} className="text-md font-semibold mb-4">
             {modifiedText.map((item: any, i: number) => (
               <React.Fragment key={i}>{item}</React.Fragment>
             ))}
-          </h4>
+          </h3>
         )
       case 'iframe':
         return (
@@ -76,6 +84,7 @@ const PostDetail = ({ post }: Props) => {
             height={obj.height}
             width={obj.width}
             src={obj.src}
+            className="p-2"
           />
         )
       default:
