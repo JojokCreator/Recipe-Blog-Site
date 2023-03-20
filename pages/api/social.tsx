@@ -7,8 +7,8 @@ import incrementPost from './postCount'
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const postNumber = parseInt((await get('post_number')) as string)
-  const data = await get('data')
-  const mode = await get('mode')
+  const data: any = await get('data')
+  const mode: any = await get('mode')
 
   const facebookPost = await facebook(mode, postNumber, data)
   const instaPost = await instagram(mode, postNumber, data)
