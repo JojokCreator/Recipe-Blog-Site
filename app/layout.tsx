@@ -11,7 +11,7 @@ export default async function RootLayout({
 }) {
   const categories = await getCategories()
 
-  return (x
+  return (
     <html lang="en-GB">
       <Script
         data-ad-client="ca-pub-6386510566931206"
