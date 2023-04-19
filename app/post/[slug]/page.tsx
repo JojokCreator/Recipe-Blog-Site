@@ -14,7 +14,7 @@ import { Params, post } from '../../../types'
 export async function generateMetadata({ params }: Params) {
   const post: post['node'] = await getPostsDetails(params.slug)
   return {
-    alternates: { canonical: `https://barefootrecipe.com/${post.slug}` },
+    alternates: { canonical: `https://barefootrecipe.com/post/${post.slug}` },
     title: post.title,
     description: post.excerpt,
     // twitter meta tags
@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Params) {
     //  open graph tags
     openGraph: {
       locale: 'en_US',
-      url: `https://barefootrecipe.com/${post.slug}`,
+      url: `https://barefootrecipe.com/post/${post.slug}`,
       title: post.title,
       description: post.excerpt,
       images: [
