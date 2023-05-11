@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: Params) {
   const post: post['node'] = await getPostsDetails(params.slug)
   return {
     alternates: { canonical: `https://barefootrecipe.com/post/${post.slug}` },
-    title: post.title,
+    title: `${post.title} - Barefoot Chef`,
     description: post.excerpt,
     // twitter meta tags
     twitter: {
