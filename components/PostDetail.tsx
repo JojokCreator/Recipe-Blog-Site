@@ -23,7 +23,11 @@ const PostDetail = ({ post }: Props) => {
         modifiedText = <b key={index}>{text}</b>
       }
       if (obj.href) {
-        modifiedText = <a href={obj.href} key={index}>{obj.children[0].text}</a>
+        modifiedText = (
+          <a href={obj.href} key={index}>
+            {obj.children[0].text}
+          </a>
+        )
       }
       if (obj.italic) {
         modifiedText = <em key={index}>{text}</em>
@@ -42,7 +46,7 @@ const PostDetail = ({ post }: Props) => {
             ))}
           </h2>
         )
-        case 'heading-two':
+      case 'heading-two':
         return (
           <h2 key={index} className="text-md font-semibold mb-4">
             {modifiedText.map((item: any, i: number) => (
@@ -100,7 +104,7 @@ const PostDetail = ({ post }: Props) => {
             height="400"
             width="640"
             priority={true}
-            alt=""
+            alt={post.title}
             className="shadow-lg rounded-t-lg lg:rounded-lg"
           />
         </div>

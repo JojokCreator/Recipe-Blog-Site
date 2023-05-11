@@ -1,5 +1,10 @@
 import Link from 'next/link'
 
+export const metadata = {
+  alternates: { canonical: 'https://barefootrecipe.com/terms' },
+  title: 'Terms and Conditions- Barefoot Recipes Site',
+}
+
 export default function Terms() {
   return (
     <>

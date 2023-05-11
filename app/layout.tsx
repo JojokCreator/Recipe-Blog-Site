@@ -4,6 +4,35 @@ import { getCategories } from '../services'
 import Script from 'next/script'
 import { AnalyticsWrapper } from '../components/analytics'
 
+export const metadata = {
+  description:
+    'Get inspired in the kitchen with recipes from Asia and beyond, learn how to brew your own beer, wine, and other drinks at home',
+  keywords: ['Asian Food', 'Cooking', 'Blog', 'Brewing'],
+  // twitter meta tags
+  twitter: {
+    card: 'summary_large_image',
+    images: {
+      url: 'https://barefootrecipe.com/blog.jpg',
+      alt: 'website image',
+    },
+  },
+  //  open graph tags
+  openGraph: {
+    locale: 'en_US',
+    url: 'https://barefootrecipe.com/',
+    title: 'Barefoot Recipes Site',
+    description:
+      'Get inspired in the kitchen with recipes from Asia and beyond, learn how to brew your own beer, wine, and other drinks at home',
+    images: [
+      {
+        url: 'https://barefootrecipe.com/blog.jpg',
+        alt: 'website image',
+      },
+    ],
+    type: 'website',
+  },
+}
+
 export default async function RootLayout({
   children,
 }: {
