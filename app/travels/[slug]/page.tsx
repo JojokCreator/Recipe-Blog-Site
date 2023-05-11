@@ -12,7 +12,9 @@ import { Params, blog } from '../../../types'
 export async function generateMetadata({ params }: Params) {
   const blog: blog['node'] = await getBlogsDetails(params.slug)
   return {
-    alternates: { canonical: `https://barefootrecipe.com/${blog.slug}` },
+    alternates: {
+      canonical: `https://barefootrecipe.com/travels/${blog.slug}`,
+    },
     title: blog.title,
     description: blog.excerpt,
     // twitter meta tags
