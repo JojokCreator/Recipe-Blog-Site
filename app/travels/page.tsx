@@ -2,6 +2,10 @@ import Link from 'next/link'
 import { getBlogs } from '../../services'
 import { blog } from '../../types'
 
+export const metadata = {
+  alternates: { canonical: 'https://barefootrecipe.com/travels' },
+  title: 'Travels - Barefoot Recipes Site',
+}
 const Travels = async () => {
   const blogs: blog[] = await getBlogs()
   return (

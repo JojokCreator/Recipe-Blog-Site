@@ -1,5 +1,7 @@
-import Image from 'next/image'
-import Link from 'next/link'
+export const metadata = {
+  alternates: { canonical: 'https://barefootrecipe.com/contact' },
+  title: 'Contact - Barefoot Recipes Site',
+}
 
 export default function About() {
   return (

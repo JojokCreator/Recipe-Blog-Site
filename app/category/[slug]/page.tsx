@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Params) {
     //  open graph tags
     openGraph: {
       locale: 'en_US',
-      url: 'https://barefootrecipe.com/',
+      url: `https://barefootrecipe.com/category/${params.slug}`,
       title: `${params.slug} recipes - Barefoot Recipes Site`,
       description:
         'Get inspired in the kitchen with recipes from Asia and beyond, learn how to brew your own beer, wine, and other drinks at home',

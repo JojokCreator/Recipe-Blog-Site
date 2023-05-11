@@ -1,5 +1,10 @@
 import Link from 'next/link'
 
+export const metadata = {
+  alternates: { canonical: 'https://barefootrecipe.com/privacy' },
+  title: 'Privacy Policy - Barefoot Recipes Site',
+}
+
 export default function Privacy() {
   return (
     <div className="flex items-center justify-center flex-col">
