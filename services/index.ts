@@ -214,7 +214,7 @@ export const getAdjacentPosts = async (createdAt: string, slug: string) => {
 export const getCategoryPost = async (slug: string) => {
   const query = gql`
     query GetCategoryPost($slug: String!) {
-      postsConnection(where: { categories_some: { slug: $slug } }) {
+      postsConnection(first: 20, where: { categories_some: { slug: $slug } }) {
         edges {
           cursor
           node {
