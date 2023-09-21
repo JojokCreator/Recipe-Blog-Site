@@ -64,6 +64,11 @@ export default async function RootLayout({
         `,
         }}
       />
+      <Script
+        data-goatcounter="https://barefoot.goatcounter.com/count"
+        async
+        src="//gc.zgo.at/count.js"
+      ></Script>
       <body>
         <Header categories={categories} />
         {children}
