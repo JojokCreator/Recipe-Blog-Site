@@ -1,24 +1,18 @@
-const withPWA = require('next-pwa')({
-  dest: 'public',
-})
+const withPWA = require('next-pwa')
 
-module.exports = async () => {
+module.exports = withPWA({
+  dest: 'public',
+  // other next-pwa configurations go here
+})({
   /**
    * @type {import('next').NextConfig}
    */
-  const nextConfig = {
-    experimental: {
-      appDir: true,
-    },
-    images: {
-      domains: ['media.graphassets.com'],
-      formats: ['image/avif', 'image/webp'],
-    },
-    reactStrictMode: true,
-  }
-  const configWithPWA = withPWA({
-    dest: 'public',
-  })(nextConfig)
-
-  return configWithPWA
-}
+  experimental: {
+    appDir: true,
+  },
+  images: {
+    domains: ['media.graphassets.com'],
+    formats: ['image/avif', 'image/webp'],
+  },
+  reactStrictMode: true,
+})
