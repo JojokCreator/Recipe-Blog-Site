@@ -1,8 +1,11 @@
 {
   "name": "Barefoot Recipes App",
   "short_name": "Barefoot Recipes App",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "theme_color": "#FFFFFF",
+  "background_color": "#FFFFFF",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",
