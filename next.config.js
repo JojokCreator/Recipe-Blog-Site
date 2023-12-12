@@ -1,10 +1,6 @@
-// /** @type {import('next').NextConfig} */
-// module.exports = {
-//   images: {
-//     domains: ["media.graphassets.com"],
-//   },
-//   reactStrictMode: true,
-// }
+const withPWA = require('next-pwa')({
+  dest: 'public',
+})
 
 module.exports = async () => {
   /**
@@ -20,5 +16,9 @@ module.exports = async () => {
     },
     reactStrictMode: true,
   }
-  return nextConfig
+  const configWithPWA = withPWA({
+    dest: 'public',
+  })(nextConfig)
+
+  return configWithPWA
 }
